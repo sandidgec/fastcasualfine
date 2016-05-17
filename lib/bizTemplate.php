@@ -10,7 +10,7 @@
     <div class="jumbotron">
         <div>
             <h1><span class="glyphicon glyphicon-cutlery"></span>Si Senor!<span class="glyphicon glyphicon-cutlery"></span></h1>
-            <p>Come check out what everybody is talking about!</p>
+            <p>Come check out what everybody is talking about!!</p>
         </div>
         <p> Easy an realiable </p>
     </div>
