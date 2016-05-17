@@ -1,0 +1,22 @@
+.jumbotron{
+    color:#49FF33;
+    height:150px;
+    margin-top:30px;
+}
+
+.jumbotron, h1{
+    margin-top:15px;
+    text-align: center;
+}
+
+.jumbotron, p{
+    margin-bottom:40px;
+}
+
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+
