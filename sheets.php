@@ -123,7 +123,7 @@
 
         <div class="col-md-4 text-center">
             <img src="lib/images/kfc2.jpg" width="210px" height="210px">
-            <h2>Fried Chicken Kentuckyn</h2>
+            <h2>Kentucky Fried Chicken</h2>
             <p>3801 E. Main   Farmington , N.M.</p>
         </div>
     </div><!--row-->
@@ -133,13 +133,13 @@
     <div class="row">
         <div class="col-md-4 text-center">
             <img src="lib/images/kfc1.jpg" width="210px" height="210px">
-            <h2>Fried Chicken Kentuckyn</h2>
+            <h2>Kentucky Fried Chicken</h2>
             <p>4198 Us Hwy 64   Kirtland, N.M.</p>
         </div>
 
         <div class="col-md-4 text-center">
             <img src="lib/images/kfcblmfd.jpg" width="210px" height="210px">
-            <h2>Fried Chicken Kentuckyn</h2>
+            <h2>Kentucky Fried Chicken</h2>
             <p>506 S. Bloomfield Blvd.   Bloomfield, N.M.</p>
         </div>
 
@@ -149,6 +149,33 @@
             <p>4530 E Main   Farmington, N.M.</p>
         </div>
     </div><!--row-->
+
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="lib/images/.jpg" width="210px" height="210px">
+            <h2></h2>
+            <p>  Farmington, N.M.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="lib/images/.jpg" width="210px" height="210px">
+            <h2></h2>
+            <p>, N.M.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="lib/images/.png" width="210px" height="210px">
+            <h2></h2>
+            <p>   Farmington, N.M.</p>
+        </div>
+    </div><!--row-->
+
+
+
+
+
 
 
 
