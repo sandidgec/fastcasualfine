@@ -1,16 +1,16 @@
 
 <?php
 
-class Buisness implements JsonSerializable
+class Business implements JsonSerializable
 {
     /**
-     * accessor method for buisnessId
+     * accessor method for businessId
      *
-     * @return int value of unique buisnessId
+     * @return int value of unique businessId
      **/
-    public function getBuisnessId()
+    public function getBusinessId()
     {
-        return ($this->buisnessId);
+        return ($this->businessId);
     }
 
     /**
@@ -18,20 +18,20 @@ class Buisness implements JsonSerializable
      * @param int $newBuisnessId unique value to represent a user $newBuisnessId
      * @throws InvalidArgumentException for invalid content
      **/
-    public function setBuisnessId($newBuisnessId)
+    public function setBusinessId($newBusinessId)
     {
 // base case: if the buisnessId is null,
 // this is a new user without a mySQL assigned id (yet)
-        if ($newBuisnessId === null) {
-            $this->buisnessId = null;
+        if ($newBusinessId === null) {
+            $this->businessId = null;
             return;
         }
 //verify the User is valid
-        $newBuisnessId = filter_var($newBuisnessId, FILTER_VALIDATE_INT);
-        if (empty($newBuisnessId) === true) {
+        $newBusinessId = filter_var($newBusinessId, FILTER_VALIDATE_INT);
+        if (empty($newBusinessId) === true) {
             throw (new InvalidArgumentException ("buisnessID invalid"));
         }
-        $this->buisnessId = $newBuisnessId;
+        $this->businessId = $newBusinessId;
     }
 
     /**
@@ -176,5 +176,5 @@ class Buisness implements JsonSerializable
 
     Public function setSpeed($newSpeed){
 
-    }
-}*/
+    }*/
+}
