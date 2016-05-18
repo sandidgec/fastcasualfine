@@ -1,5 +1,6 @@
 .jumbotron{
-    color:#49FF33;
+    color:#ccc;
+    background-color:#000066;
     height:150px;
     margin-top:20px;
 }
@@ -7,10 +8,11 @@
 .jumbotron, h1{
     margin-top:15px;
     text-align: center;
+
 }
 
 .jumbotron, p{
-    margin-bottom:40px;
+    margin-bottom:60px;
 }
 
 

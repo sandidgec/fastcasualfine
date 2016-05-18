@@ -8,7 +8,7 @@
 
 </head>
 
-    <body style="background-color:#33D1FF;">
+    <body style="background-color:#E0F4FF;">
 
     <div class="container">
         <div class="jumbotron">
@@ -144,7 +144,7 @@
         </div>
 
         <div class="col-md-4 text-center">
-            <img src="lib/images/.png" width="210px" height="210px">
+            <img src="lib/images/freddys.png" width="210px" height="210px">
             <h2>Freddy's Frozen Custard & Steakburgers</h2>
             <p>4530 E Main   Farmington, N.M.</p>
         </div>
