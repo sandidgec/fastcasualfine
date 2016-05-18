@@ -8,7 +8,7 @@
 
 </head>
 
-    <body>
+    <body style="background-color:#33D1FF;">
 
     <div class="container">
         <div class="jumbotron">
@@ -110,7 +110,7 @@
 
     <div class="row">
         <div class="col-md-4 text-center">
-            <img src="lib/images/.png" width="210px" height="210px">
+            <img src="lib/images/hometown.jpg" width="210px" height="210px">
             <h2>Hometown Hamburgers</h2>
             <p>2133 E. Main   Farmington, N.M.</p>
         </div>
@@ -144,9 +144,9 @@
         </div>
 
         <div class="col-md-4 text-center">
-            <img src="lib/images/churchs.png" width="210px" height="210px">
-            <h2></h2>
-            <p>725 W. Main   Farmington , N.M.</p>
+            <img src="lib/images/.png" width="210px" height="210px">
+            <h2>Freddy's Frozen Custard & Steakburgers</h2>
+            <p>4530 E Main   Farmington, N.M.</p>
         </div>
     </div><!--row-->
 
