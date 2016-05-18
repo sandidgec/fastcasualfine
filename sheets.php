@@ -21,19 +21,19 @@
         <div class="row">
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/arbys.jpg" width="210px" height="210px">
+                <img src="lib/images/arbys2.jpg" width="210px" height="210px">
                 <h2>Arby's</h2>
                 <p>1825 E. Main   Farmington, N.M.</p>
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/blakes.jpg" width="210px" height="210px">
+                <img src="lib/images/blakes.png" width="210px" height="210px">
                 <h2>Blakes Lotaburger</h2>
                 <p>1611 W. Main   Farmington, N.M.</p>
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/blakes.jpg" width="210px" height="210px">
+                <img src="lib/images/blakes.png" width="210px" height="210px">
                 <h2>Blakes Lotaburger</h2>
                 <p>420 E. Main   Farmington, N.M.</p>
             </div>
@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <img src="lib/images/burgerking.png" width="210px" height="210px">
+                    <img src="lib/images/burgerking.jpg" width="210px" height="210px">
                     <h2>Burger KIng</h2>
                     <p>948 E. Main   Farmington,  N.M.</p>
                 </div>
@@ -68,25 +68,58 @@
 
         <div class="row">
             <div class="col-md-4 text-center">
-                <img src="lib/images/burgerking.png" width="210px" height="210px">
+                <img src="lib/images/burgerking.jpg" width="210px" height="210px">
                 <h2>Buger King</h2>
                 <p> 4450 E. Main   Farmington, N.M.</p>
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/burgerking.png" width="210px" height="210px">
+                <img src="lib/images/burgerking.jpg" width="210px" height="210px">
                 <h2>Burger King</h2>
                 <p>710 W. Broadway   Bloomfield,  N.M.</p>
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/burgerking.png" width="210px" height="210px">
+                <img src="lib/images/burgerking.jpg" width="210px" height="210px">
                 <h2>Burger KIng</h2>
                 <p>Highway 666   Shiprock, N.M.</p>
             </div>
         </div><!--row-->
 
         </div><!--container-->
+
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="lib/images/churchs.png" width="210px" height="210px">
+            <h2>Churchs Chicken</h2>
+            <p>2711 E. 20th   Farmington, N.M.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="lib/images/churchs.png" width="210px" height="210px">
+            <h2>Churchs Chicken</h2>
+            <p>5455 E. Main, N.M.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="lib/images/churchs.png" width="210px" height="210px">
+            <h2>Churchs Chicken</h2>
+            <p>725 W. Main   Farmington, N.M.</p>
+        </div>
+    </div><!--row-->
+
+    </div><!--container-->
+
+
+
+
+
+
+
+
+
 
 
 
