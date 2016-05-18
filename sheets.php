@@ -62,8 +62,6 @@
                 </div>
             </div><!--row-->
 
-    </div><!--container-->
-
     <br><br><br>
 
         <div class="row">
@@ -86,8 +84,6 @@
             </div>
         </div><!--row-->
 
-        </div><!--container-->
-
     <br><br><br>
 
     <div class="row">
@@ -106,12 +102,53 @@
         <div class="col-md-4 text-center">
             <img src="lib/images/churchs.png" width="210px" height="210px">
             <h2>Churchs Chicken</h2>
-            <p>725 W. Main   Farmington, N.M.</p>
+            <p>725 W. Main   Farmington , N.M.</p>
         </div>
     </div><!--row-->
 
-    </div><!--container-->
+    <br><br><br>
 
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="lib/images/.png" width="210px" height="210px">
+            <h2>Hometown Hamburgers</h2>
+            <p>2133 E. Main   Farmington, N.M.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="lib/images/kfc1.jpg" width="210px" height="210px">
+            <h2>Kentucky Fried Chicken</h2>
+            <p>532 E. Main   Farmington, N.M.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="lib/images/kfc2.jpg" width="210px" height="210px">
+            <h2>Fried Chicken Kentuckyn</h2>
+            <p>3801 E. Main   Farmington , N.M.</p>
+        </div>
+    </div><!--row-->
+
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="lib/images/kfc1.jpg" width="210px" height="210px">
+            <h2>Fried Chicken Kentuckyn</h2>
+            <p>4198 Us Hwy 64   Kirtland, N.M.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="lib/images/kfcblmfd.jpg" width="210px" height="210px">
+            <h2>Fried Chicken Kentuckyn</h2>
+            <p>506 S. Bloomfield Blvd.   Bloomfield, N.M.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="lib/images/churchs.png" width="210px" height="210px">
+            <h2></h2>
+            <p>725 W. Main   Farmington , N.M.</p>
+        </div>
+    </div><!--row-->
 
 
 
