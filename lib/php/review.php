@@ -2,6 +2,8 @@
 
 class Review implements JsonSerializable
 {
+
+    
             const __default = self::Fast;
 
             const Fine = 1;
@@ -9,27 +11,27 @@ class Review implements JsonSerializable
             const Fast = 3;
 
 
-    public function getReviewID($newReviewID)
+    public function getReviewID($newReviewId)
     {
         return ($this->reviewID)
     }
 
 
-    public function setReviewID($newReviewID)
+    public function setReviewID($newReviewId)
     {
-        if ($newReviewID === null) {
-            $this->reviewID = null;
+        if ($newReviewId === null) {
+            $this->reviewId = null;
             return;
         }
         //verify the User is valid
-        $newReviewID = filter_var($newReviewID, FILTER_VALIDATE_INT);
-        if (empty($newReviewID) === true) {
+        $newReviewId = filter_var($newReviewId, FILTER_VALIDATE_INT);
+        if (empty($newReviewId) === true) {
             throw (new InvalidArgumentException ("review ID is invalid"));
         }
-        $this->userId = $newReviewID;
+        $this->userId = $newReviewId;
     }
 
-    public function getBuisnessId()
+    public function getBuisnessId($newBuisnessId)
     {
         return ($this->buisnessId);
     }

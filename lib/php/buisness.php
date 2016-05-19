@@ -1,8 +1,19 @@
 
 <?php
 
-class Business implements JsonSerializable
-{
+class Business implements JsonSerializable{
+    private $buisnessId;
+
+    private $email;
+
+    private $name;
+
+    private $phone;
+
+    private $website;
+
+
+
     /**
      * accessor method for businessId
      *
@@ -18,20 +29,20 @@ class Business implements JsonSerializable
      * @param int $newBuisnessId unique value to represent a user $newBuisnessId
      * @throws InvalidArgumentException for invalid content
      **/
-    public function setBusinessId($newBusinessId)
+    public function setBusinessId($businessId)
     {
 // base case: if the buisnessId is null,
 // this is a new user without a mySQL assigned id (yet)
-        if ($newBusinessId === null) {
+        if ($businessId === null) {
             $this->businessId = null;
             return;
         }
 //verify the User is valid
-        $newBusinessId = filter_var($newBusinessId, FILTER_VALIDATE_INT);
-        if (empty($newBusinessId) === true) {
+        $businessId = filter_var($businessId, FILTER_VALIDATE_INT);
+        if (empty($businessId) === true) {
             throw (new InvalidArgumentException ("buisnessID invalid"));
         }
-        $this->businessId = $newBusinessId;
+        $this->businessId = $businessId;
     }
 
     /**
@@ -115,7 +126,7 @@ class Business implements JsonSerializable
         if ((ctype_digit($newPhone)) === false) {
             throw new InvalidArgumentException ("phoneNumber invalid");
         }
-        if (strlen($newPhone) > 10) {
+        if (strlen($newPhone) > 16) {
             throw (new RangeException ("Phone Number should be formatted 5055558787"));
         }
         $this->phone = $newPhone;

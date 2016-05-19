@@ -21,8 +21,10 @@ CREATE TABLE user(
   userID INT UNSIGNED AUTO_INCREMENT NOT NULL,
   name VARCHAR(32) NOT NULL,
   email VARCHAR(64),
-  address VARCHAR (32),
+  phone INT (16),
   zip INT(8),
+  salt VARCHAR (64) NOT NULL,
+  hash VARCHAR (128) NOT NULL,
   PRIMARY KEY (userID)
 
 );
