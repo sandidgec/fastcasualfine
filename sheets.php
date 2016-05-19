@@ -5,6 +5,8 @@
 
 <head>
 
+    <link rel="stylesheet" href="lib/css/style.css">
+
 
 </head>
 
@@ -107,6 +109,37 @@
     </div><!--row-->
 
     <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="row">
         <div class="col-md-4 text-center">
@@ -267,7 +300,7 @@
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/teriyakichickencombo.jpg" width="270px" height="210px">
+                <img src="lib/images/teriyakichickencombo.jpg" width="210px" height="210px">
                 <h2>Teriyaki Chicken Combo</h2>
                 <p>1808 E. Main   Farmington,N.M.</p>
             </div>
@@ -278,13 +311,13 @@
 
         <div class="row">
             <div class="col-md-4 text-center">
-            <img src="lib/images/teriyakichickencombo.jpg" width="270px" height="210px">
+            <img src="lib/images/teriyakichickencombo.jpg" width="210px" height="210px">
             <h2>Teriyaki Chicken Combo</h2>
             <p>Hwy 64  Kirtland, N.M.</p>
         </div>
 
         <div class="col-md-4 text-center">
-            <img src="lib/images/teriyakichickencombo.jpg" width="270px" height="210px">
+            <img src="lib/images/teriyakichickencombo.jpg" width="210px" height="210px">
             <h2>Teriyaki Chicken Combo</h2>
             <p>400 W.Broadway   Bloomfield, N.M.</p>
         </div>
