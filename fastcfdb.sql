@@ -23,8 +23,8 @@ CREATE TABLE user(
   email VARCHAR(64),
   phone INT (16),
   zip INT(8),
-  salt VARCHAR,
-  hash VARCHAR,
+  salt VARCHAR (64) NOT NULL,
+  hash VARCHAR (128) NOT NULL,
   PRIMARY KEY (userID)
 
 );
