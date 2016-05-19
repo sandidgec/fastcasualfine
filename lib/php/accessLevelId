@@ -26,7 +26,7 @@ class accessLevel extends SplEnum implements JsonSerializable {
                 // rethrow generic exceptionthrow(new Exception($exception->getMessage(), 0, $exception));
             }
         }
-    }
+
 
     public function getAccessLevel() {
         return ($this->accessLevel);

@@ -1,8 +1,8 @@
 <?php
 
-class User implements JsonSerializable {
+class user implements JsonSerializable {
 
-    private $userId;
+    private $userID;
 
     private $email;
 
@@ -20,11 +20,13 @@ class User implements JsonSerializable {
 
     private $accessLevel;
 
-    public function __construct($newUserId, $newAccessLevel, $newEmail, $newFirstName, $newHash, $newLastName,
-                                $newPhone, $newSalt, $Zip )
+    private $address;
+
+    public function __construct($newUserID, $newAccessLevel, $newEmail, $newFirstName, $newHash, $newLastName,
+                                $newPhone, $newSalt, $Zip ,$Address)
     {
         try {
-            $this->setUserId($newUserId);
+            $this->setUserId($newUserID);
             $this->setEmail($newEmail);
             $this->setFirstName($newFirstName);
             $this->setLastName($newLastName);
@@ -33,6 +35,7 @@ class User implements JsonSerializable {
             $this->setAccessLevel($newAccessLevel);
             $this->setHash($newHash);
             $this->setSalt($newSalt);
+            $this->setAddress($newAddress);
         } catch (InvalidArgumentException $invalidArgument) {
             //rethrow the exception to the caller
             throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
@@ -45,23 +48,23 @@ class User implements JsonSerializable {
         }
     }
 
-    public function getUserId() {
-        return ($this->userId);
+    public function getUserID() {
+        return ($this->userID);
     }
 
-    public function setUserId($newUserId) {
+    public function setUserId($newUserID) {
         // base case: if the userId is null,
         // this is a new user without a mySQL assigned id (yet)
-        if($newUserId === null) {
-            $this->userId = null;
+        if($newUserID === null) {
+            $this->userID = null;
             return;
         }
         //verify the User is valid
-        $newUserId = filter_var($newUserId, FILTER_VALIDATE_INT);
-        if(empty($newUserId) === true) {
+        $newUserID = filter_var($newUserID, FILTER_VALIDATE_INT);
+        if(empty($newUserID) === true) {
             throw (new InvalidArgumentException ("userId invalid"));
         }
-        $this->userId = $newUserId;
+        $this->userID = $newUserID;
     }
 
     public function getAccessLevel() {
@@ -196,6 +199,45 @@ public function setZip($newZip) {
         }
         $this->salt = $newSalt;
     }
+
+
+    public static function getAllUSER(PDO &$pdo) {
+        // create query template
+        $query = "SELECT userID, firstName, lastName FROM userID";
+        $statement = $pdo->prepare($query);
+        // grab the bulletin from mySQL
+        try {
+            $UserID = null;
+            $statement->setFetchMode(PDO::FETCH_ASSOC);
+            $row = $statement->fetch();
+            if($row !== false) {
+                $UserID = new user ($row["userID"], $row["FirstName"], $row["LastName"]);
+            }
+        } catch(Exception $exception) {
+            // if the row couldn't be converted, rethrow it
+            throw(new PDOException($exception->getMessage(), 0, $exception));
+        }
+        return ($UserID);
+    }
+
+
+
+    public function getAddress() {
+        return ($this->address);
+    }
+
+    public function setAddress($newAddress) {
+        //verify Address is valid
+        $newAddress = filter_var($newAddress, FILTER_SANITIZE_STRING);
+        if(empty($newAddress) === true) {
+            throw new InvalidArgumentException("last name invalid");
+        }
+        if(strlen($newAddress) > 32) {
+            throw (new RangeException("Last Name content too large"));
+        }
+        $this->address = $newAddress;
+    }
+
     public function JsonSerialize() {
         $fields = get_object_vars($this);
         unset ($fields["salt"]);
@@ -203,23 +245,45 @@ public function setZip($newZip) {
         return ($fields);
     }
 
-    public function insert(PDO &$pdo) {
-        // make sure user doesn't already exist
-        if($this->userId !== null) {
-            throw (new PDOException("existing user"));
-        }
+    public function insert(PDO $pdo)
+{
+    // make sure user doesn't already exist
+    if ($this->userID !== null) {
+        throw (new PDOException("existing user"));
+
         //create query template
         $query
-            = "INSERT INTO User(accessLevel, email, firstName, hash, lastName, phone, salt, zip)
-                VALUES (:accessLevel, :email, :firstName, :hash, :lastName, :phone, :salt :zip)";
-    $statement = $pdo->prepare($query);
-    // bind the variables to the place holders in the template
-    $parameters = array("accessLevel" => $this->accessLevel, "email" => $this->email,
-        "firstName" => $this->firstName,"hash" => $this->hash, "lastName" => $this->lastName, "phone" => $this->phone,
-        "salt" => $this->salt, "zip" => $this->zip);
-    $statement->execute($parameters);
-    //update null userId with what mySQL just gave us
-    $this->userId = intval($pdo->lastInsertI
+            = "INSERT INTO user(accessLevel, email, firstName, hash, lastName, phone, salt, zip, address)
+                VALUES (:accessLevel, :email, :firstName, :hash, :lastName, :phone, :salt, :zip, :address)";
+        $statement = $pdo->prepare($query);
+        // bind the variables to the place holders in the template
+        $parameters = array("accessLevel" => $this->accessLevel, "email" => $this->email,
+            "firstName" => $this->firstName, "hash" => $this->hash, "lastName" => $this->lastName, "phone" => $this->phone,
+            "salt" => $this->salt, "zip" => $this->zip);
+        $statement->execute($parameters);
+        //update null userId with what mySQL just gave us
+        $this->userID = intval($pdo->lastInsertID);
+
     }
+}
+
+    public function delete(PDO $pdo) {
+        //create query template
+        $query = "DELETE FROM userID WHERE userID = :userID";
+        $statement = $pdo->prepare($query);
+        $parameters = array("userID" => $this->userID);
+        $statement->execute($parameters);
+    }
+
+    public function update(PDO $pdo) {
+        // create query template
+        $query = "UPDATE userID SET userID = :userID WHERE userID = :userID";
+        $statement = $pdo->prepare($query);
+        // bind the member variables
+        $parameters = array("userID" => $this->userID);
+        $statement->execute($parameters);
+    }
+
+
 
 }
