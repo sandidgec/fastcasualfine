@@ -48,7 +48,7 @@
                 <div class="col-md-4 text-center">
                     <img src="lib/images/blakes.png" width="210px" height="210px">
                     <h2>Blakes Lotaburger</h2>
-                    <p> 2220 E. 20th   Farmington, N.M.</p>
+                    <p> 2220 E. 20th st   Farmington, N.M.</p>
                 </div>
 
                 <div class="col-md-4 text-center">
@@ -106,7 +106,7 @@
             <div class="col-md-4 text-center">
                 <img src="lib/images/churchs.png" width="210px" height="210px">
                 <h2>Churchs Chicken</h2>
-                <p>2711 E. 20th   Farmington, N.M.</p>
+                <p>2711 E. 20th st   Farmington, N.M.</p>
             </div>
 
         </div><!--row-->
@@ -130,7 +130,7 @@
             <div class="col-md-4 text-center">
                 <img src="lib/images/corndogsplus.jpg" width="210px" height="210px">
                 <h2>Corn Dogs Plus</h2>
-                <p>3000 E. 20th   Farmington , N.M.</p>
+                <p>3000 E. 20th st   Farmington , N.M.</p>
             </div>
 
         </div><!--row-->
@@ -169,11 +169,11 @@
             <div class="col-md-4 text-center">
                 <img src="lib/images/dominos2.png" width="210px" height="210px">
                 <h2>Domino's Pizza</h2>
-                <p>3000 E. 20th   Farmington, N.M.</p>
+                <p>3000 E. 20th st   Farmington, N.M.</p>
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/dominos3.png" width="210px" height="210px">
+                <img src="lib/images/dominos3.jpg" width="210px" height="210px">
                 <h2>Domino's Pizza</h2>
                 <p>725 W. Main   Farmington, N.M.</p>
             </div>
@@ -195,9 +195,53 @@
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/dominos6.png" width="210px" height="210px">
+                <img src="lib/images/dominos6.jpg" width="210px" height="210px">
                 <h2>Domino's Pizza</h2>
                 <p>4208 Hwy. 64   Kirtland, N.M.</p>
+            </div>
+        </div><!--row-->
+
+        <br><br><br>
+
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="lib/images/dominos7.jpg" width="210px" height="210px">
+                <h2>Domino's Pizza</h2>
+                <p>Shiprock Trading Post   Shiprock, N.M.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="lib/images/dunkind.png" width="210px" height="210px">
+                <h2>Dunkin' Donuts</h2>
+                <p>3030 E. Main   Farmington, N.M.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="lib/images/famouswok.jpg" width="210px" height="210px">
+                <h2>Famous Wok</h2>
+                <p>Animas Valley Mall   Farmington, N.M.</p>
+            </div>
+        </div><!--row-->
+
+        <br><br><br>
+
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="lib/images/dominos7.jpg" width="210px" height="210px">
+                <h2>Fat Boys Deli</h2>
+                <p>1301 20th st   Farmington, N.M.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="lib/images/dunkind.png" width="210px" height="210px">
+                <h2></h2>
+                <p>   Farmington, N.M.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="lib/images/famouswok.jpg" width="210px" height="210px">
+                <h2></h2>
+                <p>   Farmington, N.M.</p>
             </div>
         </div><!--row-->
 
@@ -272,7 +316,7 @@
         <div class="col-md-4 text-center">
             <img src="lib/images/freddys.png" width="210px" height="210px">
             <h2>Freddy's Frozen Custard & Steakburgers</h2>
-            <p>4530 E Main   Farmington, N.M.</p>
+            <p>4530 E. Main   Farmington, N.M.</p>
         </div>
     </div><!--row-->
 
