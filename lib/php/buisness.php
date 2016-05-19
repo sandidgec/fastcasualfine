@@ -115,7 +115,7 @@ class Business implements JsonSerializable
         if ((ctype_digit($newPhone)) === false) {
             throw new InvalidArgumentException ("phoneNumber invalid");
         }
-        if (strlen($newPhone) > 10) {
+        if (strlen($newPhone) > 16) {
             throw (new RangeException ("Phone Number should be formatted 5055558787"));
         }
         $this->phone = $newPhone;
