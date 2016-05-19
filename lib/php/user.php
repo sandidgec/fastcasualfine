@@ -219,7 +219,7 @@ public function setZip($newZip) {
         "salt" => $this->salt, "zip" => $this->zip);
     $statement->execute($parameters);
     //update null userId with what mySQL just gave us
-    $this->userId = intval($pdo->lastInsertI);
+    $this->userId = intval($pdo->lastInsertI
     }
 
 }
