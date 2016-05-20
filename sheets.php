@@ -300,15 +300,15 @@
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/.jpg" width="210px" height="210px">
-                <h2></h2>
-                <p>  Farmington, N.M.</p>
+                <img src="lib/images/mcd4.png" width="210px" height="210px">
+                <h2>McDonald's</h2>
+                <p>104 W. Aztec Blvd.   Aztec, N.M.</p>
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="lib/images/.jpg" width="210px" height="210px">
-                <h2></h2>
-                <p>, N.M.</p>
+                <img src="lib/images/mcd2.png" width="210px" height="210px">
+                <h2>McDonald's</h2>
+                <p>2215 E. Main   Farmington, N.M.</p>
             </div>
 
         </div><!--row-->
@@ -317,12 +317,87 @@
 
         <div class="row">
             <div class="col-md-4 text-center">
-                <img src="lib/images/.png" width="210px" height="210px">
-                <h2></h2>
-                <p>   Farmington, N.M.</p>
+                <img src="lib/images/mcd3.jpg" width="210px" height="210px">
+                <h2>McDonald's</h2>
+                <p>1608 W. Main   Farmington, N.M.</p>
             </div>
+
+            <div class="col-md-4 text-center">
+                <img src="lib/images/pjohns.jpg" width="210px" height="210px">
+                <h2>Papa John's</h2>
+                <p>3030 E. Main   Farmington, N.M.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="lib/images/papam.png" width="210px" height="210px">
+                <h2>Papa Murphy's Take 'N' Bake Pizza</h2>
+                <p>3554 E. Main   Farmington, N.M.</p>
+            </div>
+
         </div><!--row-->
 
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/p9.png" width="210px" height="210px">
+                    <h2>Pizza 9</h2>
+                    <p>685 S. Scott Ave.   Farmington, N.M.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/schltzy.jpg" width="210px" height="210px">
+                    <h2>Schlotzsky's Deli</h2>
+                    <p>484 E. 20th. st.   Farmington, N.M.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/sonic1.png" width="210px" height="210px">
+                    <h2>Sonic Drive In</h2>
+                    <p>1522 W. Aztec, N.M.</p>
+                </div>
+
+            </div><!--row-->
+
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/sonic2.jpg" width="210px" height="210px">
+                    <h2>Sonic Drive In</h2>
+                    <p>1332 W. Broadway   Bloomfield, N.M.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/sonic3.jpg" width="210px" height="210px">
+                    <h2>Sonic Drive In</h2>
+                    <p>3820 E. Main   Farmington, N.M.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/sonic4.jpg" width="210px" height="210px">
+                    <h2>Sonic Drive In</h2>
+                    <p>1720 W. Main   Farmington, N.M.</p>
+                </div>
+
+            </div><!--row-->
+
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/sonic5.jpg" width="210px" height="210px">
+                    <h2>Sonic Drive In</h2>
+                    <p>1610 E. 20th. st.   Farmington, N.M.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/sonic6.jpg" width="210px" height="210px">
+                    <h2>Sonic Drive In</h2>
+                    <p>1203 San Juan Blvd.   Farmington, N.M.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="lib/images/sonic4.png" width="210px" height="210px">
+                    <h2></h2>
+                    <p>   Farmington, N.M.</p>
+                </div>
+
+            </div><!--row-->
 
 
 
@@ -335,11 +410,22 @@
 
 
 
-            
 
 
 
-    <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container">
         <div class="jumbotron">
             <h1>Fast Food</h1>
         </div>
