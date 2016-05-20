@@ -248,30 +248,27 @@
         <br><br><br>
 
         <div class="row">
-
             <div class="col-md-4 text-center">
-                <img src="lib/images/.jpg" width="210px" height="210px">
-                <h2></h2>
-                <p>   Farmington, N.M.</p>
+                <img src="lib/images/freddys.png" width="210px" height="210px">
+                <h2>Freddy's Frozen Custard & Steakburgers</h2>
+                <p>4530 E. Main   Farmington, N.M.</p>
             </div>
 
-
-
-
-
-
-        </div><!--row-->
-
-
-
-
-
-        <div class="row">
             <div class="col-md-4 text-center">
                 <img src="lib/images/hometown.jpg" width="210px" height="210px">
                 <h2>Hometown Hamburgers</h2>
                 <p>2133 E. Main   Farmington, N.M.</p>
             </div>
+
+            <div class="col-md-4 text-center">
+                <img src="lib/images/jimmyjohn.png" width="210px" height="210px">
+                <h2>Jimmy John's Gourmet Sandwiches</h2>
+                <p>3060 E. 20th. st. Suite #B   Farmington, N.M.</p>
+            </div>
+
+        </div><!--row-->
+
+        <div class="row">
 
             <div class="col-md-4 text-center">
                 <img src="lib/images/kfc1.jpg" width="210px" height="210px">
@@ -284,33 +281,24 @@
                 <h2>Kentucky Fried Chicken</h2>
                 <p>3801 E. Main   Farmington , N.M.</p>
             </div>
-        </div><!--row-->
 
-    <br><br><br>
-
-        <div class="row">
             <div class="col-md-4 text-center">
                 <img src="lib/images/kfc1.jpg" width="210px" height="210px">
                 <h2>Kentucky Fried Chicken</h2>
                 <p>4198 Us Hwy 64   Kirtland, N.M.</p>
             </div>
 
+        </div><!--row-->
+
+    <br><br><br>
+
+        <div class="row">
             <div class="col-md-4 text-center">
                 <img src="lib/images/kfcblmfd.jpg" width="210px" height="210px">
                 <h2>Kentucky Fried Chicken</h2>
                 <p>506 S. Bloomfield Blvd.   Bloomfield, N.M.</p>
             </div>
 
-            <div class="col-md-4 text-center">
-                <img src="lib/images/freddys.png" width="210px" height="210px">
-                <h2>Freddy's Frozen Custard & Steakburgers</h2>
-                <p>4530 E. Main   Farmington, N.M.</p>
-            </div>
-        </div><!--row-->
-
-    <br><br><br>
-
-        <div class="row">
             <div class="col-md-4 text-center">
                 <img src="lib/images/.jpg" width="210px" height="210px">
                 <h2></h2>
@@ -323,6 +311,11 @@
                 <p>, N.M.</p>
             </div>
 
+        </div><!--row-->
+
+    <br><br><br>
+
+        <div class="row">
             <div class="col-md-4 text-center">
                 <img src="lib/images/.png" width="210px" height="210px">
                 <h2></h2>
@@ -342,40 +335,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
 
 
 
