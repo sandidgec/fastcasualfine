@@ -21,14 +21,14 @@ class user implements JsonSerializable {
 //    private $accessLevel;
 
 
-    public function __construct($newUserID, $newEmail, $newHash, $newPhone, $newSalt, $Zip, $Name)
+    public function __construct($newUserID, $newName, $newEmail, $newPhone, $newZip,  $newSalt, $newHash)
     {
         try {
             $this->setUserId($newUserID);
             $this->seName($newName);
             $this->setEmail($newEmail);
             $this->setPhone($newPhone);
-            $this->setZip($Zip);
+            $this->setZip($newZip);
             $this->setHash($newHash);
             $this->setSalt($newSalt);
         } catch (InvalidArgumentException $invalidArgument) {
@@ -181,27 +181,29 @@ public function setZip($newZip) {
 
     public static function getAllUsers(PDO $pdo) {
         //create the query template
-        $query = "SELECT userID, name, email,phone FROM user";
+        $query = "SELECT userID, name, email, phone, zip FROM 'user'";
         $statement = $pdo->prepare($query);
+
         // execute
         $statement->execute();
         //call the function to build an array of the values
-        $user = null;
+        $users = null;
         $statement->setFetchMode(PDO::FETCH_ASSOC);
-        $user = new SplFixedArray($statement->rowCount());
+        $users = new SplFixedArray($statement->rowCount());
+
         while(($row = $statement->fetch()) !== false) {
         try {
             if($row !== false) {
-                $user = new user($row["userID"], $row["name"], $row["email"], $row["phone"]);
-                $user[$user->key()] = $user;
-                $user->next();
+                $user = new user($row["userID"], $row["name"], $row["email"], $row["phone"], $row["zip"], $row["salt"], $row["hash"]);
+                $users[$users->key()] = $user;
+                $users->next();
                 }
             } catch(Exception $exception) {
 
             throw(new PDOException($exception->getMessage(), 0, $exception));
             }
         }
-        return $user;
+        return $users;
     }
     
     public function JsonSerialize() {
@@ -211,26 +213,31 @@ public function setZip($newZip) {
         return ($fields);
     }
 
-    public static function getUserByUserID(PDO $pdo, $userID) {
-        $userID = filter_var($userID, FILTER_VALIDATE_INT);
+    public static function getUserByUserID(PDO $pdo, $user) {
+
+        $userID = filter_var($user, FILTER_VALIDATE_INT);
+
         if($userID === false) {
             throw(new PDOException(""));
         }
+        if($userID <= 0) {
+            throw(new PDOException("userID is not positive"));
+        }
         // create query template
-        $query = "SELECT userID, email, name, phone FROM user WHERE userID = :userID";
+        $query = "SELECT userID, email, name, phone, zip FROM 'user' WHERE userID = :userID";
         $statement = $pdo->prepare($query);
         // bind the bulletinid to the place holder in the template
-        $parameters = array("userID" => $userID);
+        $parameters = array("user" => $user);
         $statement->execute($parameters);
 
-        $userID= null;
+        $user= null;
         $statement->setFetchMode(PDO::FETCH_ASSOC);
         $row = $statement->fetch();
 
         // grab the bulletin from mySQL
         try {
             if($row !== false) {
-                $userID = new user ($row["userId"], $row["name"], $row["email"], $row["phone"]);
+                $user = new user ($row["userId"], $row["name"], $row["email"], $row["phone"], $row["zip"], $row["salt"], $row["hash"]);
                 $userID[$userID->key()] = $user;
                 $userID->next();
             }
@@ -238,7 +245,7 @@ public function setZip($newZip) {
             // if the row couldn't be converted, rethrow it
             throw(new PDOException($exception->getMessage(), 0, $exception));
         }
-        return $userID;
+        return $user;
     }
 
 
@@ -247,10 +254,10 @@ public function setZip($newZip) {
     // make sure user doesn't already exist
     if ($this->userID !== null) {
         throw (new PDOException("existing user"));
-
+    }
         //create query template
         $query
-            = "INSERT INTO user(name, email, phone, zip, salt, hash)" .
+            = "INSERT INTO 'user'(name, email, phone, zip, salt, hash)" .
                 "VALUES ( :name, :email, :hash, :phone, :salt, :zip)";
         $statement = $pdo->prepare($query);
         // bind the variables to the place holders in the template
@@ -259,22 +266,28 @@ public function setZip($newZip) {
             "salt" => $this->salt, "zip" => $this->zip);
         $statement->execute($parameters);
         //update null userId with what mySQL just gave us
-        $this->userID = intval($pdo->lastInsertID);
+        $this->userID = intval($pdo->lastInsertId());
 
     }
-}
+
 
     public function delete(PDO $pdo) {
+
+        if ($this->userID === null){
+            throw(new PDOException("unable to delete a project that does not exist"));
+        }
+
         //create query template
         $query = "DELETE FROM 'user' WHERE userID = :userID";
         $statement = $pdo->prepare($query);
+
         $parameters = array("userID" => $this->userID);
         $statement->execute($parameters);
     }
 
     public function update(PDO $pdo) {
         // create query template
-        $query = "UPDATE user SET userID = :userID, name = :name, email = :email, phone = :phone, zip = :zip WHERE userID = :userID, name = :name, email = :email, phone = :phone, zip = :zip";
+        $query = "UPDATE 'user' SET name = :name, email = :email, phone = :phone, zip = :zip WHERE userID = :userID";
         $statement = $pdo->prepare($query);
         // bind the member variables
         $parameters = array("userID" => $this->userID, "name" => $this->name, "email" => $this->email, "phone"=> $this->phone, "zip" => $this->zip);
