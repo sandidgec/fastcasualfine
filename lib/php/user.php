@@ -219,7 +219,7 @@ public function setZip($newZip) {
             throw(new PDOException(""));
         }
         if($userID <= 0) {
-            throw(new PDOException("userID id is not positive"));
+            throw(new PDOException("userID is not positive"));
         }
         // create query template
         $query = "SELECT userID, email, name, phone FROM user WHERE userID = :userID";
