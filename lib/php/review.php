@@ -51,16 +51,16 @@ class review implements JsonSerializable
 
     public function setReviewID($newReviewId)
     {
-        if ($newReviewId === null) {
-            $this->review = null;
-            return;
-        }
-        //verify the review is valid
-        $newReviewId = filter_var($newReviewId, FILTER_VALIDATE_INT);
-        if (empty($newReviewId) === true) {
-            throw (new InvalidArgumentException ("review ID is invalid"));
-        }
-        $this->userId = $newReviewId;
+                if ($newReviewId === null) {
+                    $this->review = null;
+                    return;
+                }
+                //verify the review is valid
+                $newReviewId = filter_var($newReviewId, FILTER_VALIDATE_INT);
+                if (empty($newReviewId) === true) {
+                    throw (new InvalidArgumentException ("review ID is invalid"));
+                }
+                $this->userId = $newReviewId;
     }
 
     public function getBuisnessId($newBusinessId)
@@ -73,96 +73,96 @@ class review implements JsonSerializable
      * @param int $newBuisnessId unique value to represent a user $newBuisnessId
      * @throws InvalidArgumentException for invalid content
      **/
-    public function setBuisnessId($newBusinessId)
+    public function setBusinessId($newBusinessId)
     {
 // base case: if the buisnessId is null,
 // this is a new user without a mySQL assigned id (yet)
-        if ($newBusinessId === null) {
-            $this->businessId = null;
-            return;
+                 if ($newBusinessId === null) {
+                       $this->businessId = null;
+                 return;
         }
 //verify the User is valid
-        $newBusinessId = filter_var($newBusinessId, FILTER_VALIDATE_INT);
-        if (empty($newBusinessId) === true) {
-            throw (new InvalidArgumentException ("buisnessID invalid"));
+                $newBusinessId = filter_var($newBusinessId, FILTER_VALIDATE_INT);
+                if (empty($newBusinessId) === true) {
+                    throw (new InvalidArgumentException ("buisnessID invalid"));
+                }
+                $this->businessId = $newBusinessId;
         }
-        $this->businessId = $newBusinessId;
-    }
-    public function getUserId($newUserId){
-        return ($this->userId);
-    }
-
-    public function setUserId($newUserId)
-    {
-
-
-        if ($newUserId === null) {
-            $this->userId = null;
-            return;
+        public function getUserId($newUserId){
+            return ($this->userId);
         }
 
-        $newUserId = filter_var($newUserId, FILTER_VALIDATE_INT);
-        if (empty($newUserId) === true) {
-            throw (new InvalidArgumentException ("userId invalid"));
+        public function setUserId($newUserId)
+        {
+
+
+                if ($newUserId === null) {
+                    $this->userId = null;
+                    return;
+                }
+
+                $newUserId = filter_var($newUserId, FILTER_VALIDATE_INT);
+                if (empty($newUserId) === true) {
+                    throw (new InvalidArgumentException ("userId invalid"));
+                }
+                $this->userId = $newUserId;
         }
-        $this->userId = $newUserId;
-    }
 
-    public function getRating($rating){
-        return($this->rating);
-    }
-
-    public function setRating($rating){
-        if ($rating === null){
-            $this->rating = null;
-            return;
+        public function getRating($rating){
+            return($this->rating);
         }
-    }
 
-
-    public function getTime($time){
-        return ($this->time);
-    }
-
-    public function setTime($time)
-    {
-        if ($time === null) {
-        $this->time = null;
-        return;
-    }
-    }
-
-    function validateDate($time)
-    {
-        // base case: if the date is a DateTime object, there's no work to be done
-        if (is_object($time) === true && get_class($time) === "DateTime") {
-            return ($time);
-        }
-        // treat the date as a mySQL date string: Y-m-d H:i:s
-        $time = trim($time);
-        if ((preg_match("/^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})$/", $time, $matches)) !== 1) {
-            throw(new InvalidArgumentException("date is not a valid date"));
-        }
-        // verify the date is really a valid calendar date
-        $year = intval($matches[1]);
-        $month = intval($matches[2]);
-        $day = intval($matches[3]);
-        $hour = intval($matches[4]);
-        $minute = intval($matches[5]);
-        $second = intval($matches[6]);
-        if (checkdate($month, $day, $year) === false) {
-            throw(new RangeException("date $time is not a Gregorian date"));
+        public function setRating($rating){
+                if ($rating === null){
+                    $this->rating = null;
+                    return;
+                }
         }
 
 
+        public function getTime($time){
+            return ($this->time);
+        }
 
+        public function setTime($time)
+        {
+                if ($time === null) {
+                $this->time = null;
+                return;
+        }
+        }
+
+        function validateDate($time)
+        {
+            // base case: if the date is a DateTime object, there's no work to be done
+                if (is_object($time) === true && get_class($time) === "DateTime") {
+                    return ($time);
+                }
+                // treat the date as a mySQL date string: Y-m-d H:i:s
+                $time = trim($time);
+                if ((preg_match("/^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})$/", $time, $matches)) !== 1) {
+                    throw(new InvalidArgumentException("date is not a valid date"));
+                }
+                // verify the date is really a valid calendar date
+                $year = intval($matches[1]);
+                $month = intval($matches[2]);
+                $day = intval($matches[3]);
+                $hour = intval($matches[4]);
+                $minute = intval($matches[5]);
+                $second = intval($matches[6]);
+                if (checkdate($month, $day, $year) === false) {
+                    throw(new RangeException("date $time is not a Gregorian date"));
+                }
+
+
+
+        }
+        public function JsonSerialize()
+        {
+            $fields = get_object_vars($this);
+            return ($fields);
+        }
     }
-    public function JsonSerialize()
-    {
-        $fields = get_object_vars($this);
-        return ($fields);
-    }
-}
 
 /**
  * Inserts Bulletin into mySQL

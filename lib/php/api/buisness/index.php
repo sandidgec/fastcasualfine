@@ -45,6 +45,8 @@ try {
         // handle optional fields
         $attention = (empty($requestObject->attention) === true ? null : $requestObject->attention);
         $addressLineTwo = (empty($requestObject->addressLineTwo) === true ? null : $requestObject->addressLineTwo);
+
+        
         $user = new User($userId, $requestObject->lastName, $requestObject->firstName, false, $attention,
             $requestObject->addressLineOne, $addressLineTwo, $requestObject->city, $requestObject->state,
             $requestObject->zipCode, $requestObject->email, $requestObject->phoneNumber, $salt, $hash);
