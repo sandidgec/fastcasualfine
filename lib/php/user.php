@@ -73,7 +73,7 @@ class user implements JsonSerializable {
 //            throw new InvalidArgumentException ("Access Level Invalid");
 //        }
 //        if ( ($newAccessLevel !== 'A') || ($newAccessLevel !== 'U') || ($newAccessLevel !== 'S')){
-//            throw new InvalidArgumentException("Access Level Invaild");
+//            throw new InvalidArgumentException("Access Level Invalid");
 //        }
 //
 //        $this->accessLevel = $newAccessLevel;
@@ -226,7 +226,7 @@ public function setZip($newZip) {
         // create query template
         $query = "SELECT userID, email, name, phone, zip FROM 'user' WHERE userID = :userID";
         $statement = $pdo->prepare($query);
-        // bind the bulletinid to the place holder in the template
+        // bind the bulletin id to the place holder in the template
         $parameters = array("user" => $user);
         $statement->execute($parameters);
 
