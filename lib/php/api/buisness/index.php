@@ -18,7 +18,7 @@ try {
     // sanitize the email
     $email = filter_input(INPUT_GET, "email", FILTER_SANITIZE_EMAIL);
     // grab the mySQL connection
-    $pdo = connectToEncryptedMySql("/etc/apache2/capstone-mysql/invtext.ini");
+    //$pdo = connectToEncryptedMySql("/etc/apache2/capstone-mysql/invtext.ini");
     // handle all RESTful calls to User today
     // get some or all Users
     if($method === "GET") {

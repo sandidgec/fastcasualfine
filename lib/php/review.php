@@ -2,16 +2,18 @@
 
 class review implements JsonSerializable
 {
+    //comments
     private $reviewID;
 
     private $businessId;
 
     private $userId;
 
+    private $rating;
+
     private $time;
 
-
-    public function __construct($newBusinessId, $newEmail, $newName, $newPhone, $newWebsite, $newAddress, $newZip )
+    public function __construct($newReviewId, $newBusinessId, $newUserId, $newTime )
     {
         try {
             $this->setReviewID ($newReviewId);
@@ -86,6 +88,9 @@ class review implements JsonSerializable
         }
         $this->businessId = $newBusinessId;
     }
+    public function getUserId($newUserId){
+        return ($this->userId);
+    }
 
     public function setUserId($newUserId)
     {
@@ -103,10 +108,20 @@ class review implements JsonSerializable
         $this->userId = $newUserId;
     }
 
+    public function getRating($rating){
+        return($this->rating);
+    }
 
-    public function getTime($time)
-    {
+    public function setRating($rating){
+        if ($rating === null){
+            $this->rating = null;
+            return;
+        }
+    }
 
+
+    public function getTime($time){
+        return ($this->time);
     }
 
     public function setTime($time)
@@ -163,7 +178,7 @@ public function insert(PDO &$pdo)
     }
     //create query template
     $query
-        = "INSERT INTO review (userId, buisnessId, time)" .
+        = "INSERT INTO review(userId, businessId, time)" .
         "VALUES (:userId, :buisnessId, :time)";
     $statement = $pdo->prepare($query);
     // bind the variables to the place holders in the template
