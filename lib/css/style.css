@@ -28,4 +28,11 @@ h1 {
     border:3px solid#060606;
 
 }
-
+#footer {
+    clear: both;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    padding: 20px 0px;
+    font-size: 80%;
+    text-align: center;
+}

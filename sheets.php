@@ -84,9 +84,13 @@
                 <p> 4450 E. Main   Farmington, N.M.</p>
             </div>
 
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
         </div><!--row-->
 
-        <br><br><br>
+    <br><br><br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -153,9 +157,13 @@
                 <p>721 E. Main   Farmington, N.M.</p>
             </div>
 
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
         </div><!--row-->
 
-    <br><br><br>
+    <br><br><br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -178,7 +186,7 @@
 
         </div><!--row-->
 
-        <br><br><br>
+    <br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -201,7 +209,7 @@
 
         </div><!--row-->
 
-        <br><br><br>
+    <br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -222,9 +230,13 @@
                 <p>3030 E. Main   Farmington, N.M.</p>
             </div>
 
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
         </div><!--row-->
 
-        <br><br><br>
+    <br><br><br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -245,7 +257,7 @@
                 <p>820 Sullivan Ave.   Farmington, N.M.</p>
             </div>
 
-        <br><br><br>
+    <br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -268,6 +280,8 @@
 
         </div><!--row-->
 
+    <br><br><br>
+
         <div class="row">
 
             <div class="col-md-4 text-center">
@@ -288,9 +302,13 @@
                 <p>4198 Us Hwy 64   Kirtland, N.M.</p>
             </div>
 
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
         </div><!--row-->
 
-    <br><br><br>
+    <br><br><br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -336,6 +354,8 @@
 
         </div><!--row-->
 
+    <br><br><br>
+
             <div class="row">
                 <div class="col-md-4 text-center">
                     <img class="circleimage" src="lib/imagesfast/p9.png">
@@ -355,7 +375,13 @@
                     <p>1522 W. Aztec, N.M.</p>
                 </div>
 
+                <div id="footer">
+                    Copyright 2016 Cultivating Coders media
+                </div>
+
             </div><!--row-->
+
+        <br><br><br>
 
             <div class="row">
                 <div class="col-md-4 text-center">
@@ -378,6 +404,8 @@
 
             </div><!--row-->
 
+        <br><br><br>
+
             <div class="row">
                 <div class="col-md-4 text-center">
                     <img class="circleimage" src="lib/imagesfast/sonic5.jpg">
@@ -399,6 +427,8 @@
 
             </div><!--row-->
 
+        <br><br><br>
+
             <div class="row">
                 <div class="col-md-4 text-center">
                     <img class="circleimage" src="lib/imagesfast/subway1.jpg">
@@ -418,7 +448,13 @@
                     <p>3800 E. Main    Farmington, N.M.</p>
                 </div>
 
+                <div id="footer">
+                    Copyright 2016 Cultivating Coders media
+                </div>
+
             </div><!--row-->
+
+    <br><br><br><br><br>
 
             <div class="row">
                 <div class="col-md-4 text-center">
@@ -441,26 +477,26 @@
 
             </div><!--row-->
 
-        <div class="container">
+        <br><br><br>
 
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagesfast/taco.jpg">
-                        <h2>Taco Bell</h2>
-                        <p>2226 E. Main   Farmington, N.M.</p>
-                    </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img class="circleimage" src="lib/imagesfast/taco.jpg">
+                    <h2>Taco Bell</h2>
+                    <p>2226 E. Main   Farmington, N.M.</p>
+                </div>
 
-                    <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagesfast/taco.jpg">
-                        <h2>Taco Bell</h2>
-                        <p>4601 E. Main   Farmington, N.M.</p>
-                    </div>
+                <div class="col-md-4 text-center">
+                    <img class="circleimage" src="lib/imagesfast/taco.jpg">
+                    <h2>Taco Bell</h2>
+                    <p>4601 E. Main   Farmington, N.M.</p>
+                </div>
 
-                    <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagesfast/tacobox.jpg">
-                        <h2>Taco Box</h2>
-                        <p>777 W. Broadway   Farmimgton,N.M.</p>
-                    </div>
+                <div class="col-md-4 text-center">
+                    <img class="circleimage" src="lib/imagesfast/tacobox.jpg">
+                    <h2>Taco Box</h2>
+                    <p>777 W. Broadway   Farmimgton,N.M.</p>
+                </div>
 
                 </div><!--row-->
 
@@ -485,9 +521,13 @@
                 <p>Hwy 64   Kirtland, N.M.</p>
             </div>
 
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
         </div><!--row-->
 
-        <br><br><br>
+    <br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -522,6 +562,11 @@
                 <h2>Wendy's Old Fashion Hamburgers</h2>
                 <p>1305 Aztec Blvd   Aztec, N.M.</p>
             </div>
+
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
         </div><!--row-->
 
     </div><!--container-->
