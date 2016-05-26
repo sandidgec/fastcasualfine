@@ -1,19 +1,18 @@
 <?php
-/**
-* automatically loads the class on demand
-*
-* @param string $className class name to load
-* @return bool true if the class loaded correctly, false if not
-**/
-function loadClass($user) {
-$user[0] = strtolower($user[0]);
-$user = preg_replace_callback("/([A-Z])/", function($matches) {
-return("-" . strtolower($matches[0]));
-}, $user);
-$classFile = __DIR__ . "/" . $user . ".php";
-if(is_readable($classFile) === true && require_once($classFile)) {
-return(true);
-} else {
-return(false);
-}
+spl_autoload_register("Autoloader::classLoader");
+class Autoloader {
+    /**
+     * This function autoloads classes if they exist
+     *
+     * @param string $className name of class to load
+     * @return bool false if classes can not be loaded
+     **/
+    public static function classLoader($className) {
+        $className = strtolower($className);
+        if(is_readable(__DIR__ . "/$className.php")) {
+            require_once(__DIR__ . "/$className.php");
+        } else {
+            return (false);
+        }
+    }
 }
