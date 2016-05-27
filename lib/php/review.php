@@ -3,23 +3,24 @@
 class review implements JsonSerializable
 {
     //comments
-    private $reviewID;
+    private $reviewId;
 
     private $businessId;
 
-    private $userId;
+    private $userID;
 
     private $rating;
 
-    private $time;
+    private $date;
 
-    public function __construct($newReviewId, $newBusinessId, $newUserId, $newTime )
+    public function __construct($newReviewId, $newBusinessId, $newUserID, $rating, $newdate)
     {
         try {
-            $this->setReviewID ($newReviewId);
-            $this->setBusinessId ($newBusinessId);
-            $this->setUserId ($newUserId);
-            $this->setTime($newTime);
+            $this->setReviewId($newReviewId);
+            $this->setBusinessId($newBusinessId);
+            $this->setUserID($newUserID);
+            $this->setRating($rating);
+            $this->setdate($newdate);
         } catch (InvalidArgumentException $invalidArgument) {
             //rethrow the exception to the caller
             throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
@@ -31,224 +32,276 @@ class review implements JsonSerializable
             throw(new Exception($exception->getMessage(), 0, $exception));
         }
     }
+    
 
-
-
-
-
-    const __default = self::Fast;
-
-    const Fine = 1;
-    const Casual = 2;
-    const Fast = 3;
-
-
-    public function getReviewID($newReviewId)
+    public function getReviewId()
     {
-        return ($this->reviewID);
+        return ($this->reviewId);
     }
 
 
-    public function setReviewID($newReviewId)
+    public function setReviewId($newReviewId)
     {
-                if ($newReviewId === null) {
-                    $this->review = null;
-                    return;
-                }
-                //verify the review is valid
-                $newReviewId = filter_var($newReviewId, FILTER_VALIDATE_INT);
-                if (empty($newReviewId) === true) {
-                    throw (new InvalidArgumentException ("review ID is invalid"));
-                }
-                $this->userId = $newReviewId;
+        if ($newReviewId === null) {
+            $this->review = null;
+            return;
+        }
+        //verify the review is valid
+        $newReviewId = filter_var($newReviewId, FILTER_VALIDATE_INT);
+        if (empty($newReviewId) === true) {
+            throw (new InvalidArgumentException ("review ID is invalid"));
+        }
+        $this->reviewId = $newReviewId;
     }
 
-    public function getBuisnessId($newBusinessId)
+    public function getBusinessId()
     {
         return ($this->businessId);
     }
 
     /**
-     * mutator method for the buisnessId
-     * @param int $newBuisnessId unique value to represent a user $newBuisnessId
+     * mutator method for the businessId
+     * @param int $newBusinessId unique value to represent a user $newBusinessId
      * @throws InvalidArgumentException for invalid content
      **/
     public function setBusinessId($newBusinessId)
     {
-// base case: if the buisnessId is null,
+// base case: if the businessId is null,
 // this is a new user without a mySQL assigned id (yet)
-                 if ($newBusinessId === null) {
-                       $this->businessId = null;
-                 return;
+        if ($newBusinessId === null) {
+            $this->businessId = null;
+            return;
         }
 //verify the User is valid
-                $newBusinessId = filter_var($newBusinessId, FILTER_VALIDATE_INT);
-                if (empty($newBusinessId) === true) {
-                    throw (new InvalidArgumentException ("buisnessID invalid"));
-                }
-                $this->businessId = $newBusinessId;
+        $newBusinessId = filter_var($newBusinessId, FILTER_VALIDATE_INT);
+        if (empty($newBusinessId) === true) {
+            throw (new InvalidArgumentException ("businessId invalid"));
         }
-        public function getUserId($newUserId){
-            return ($this->userId);
-        }
+        $this->businessId = $newBusinessId;
+    }
 
-        public function setUserId($newUserId)
-        {
+    public function getUserID()
+    {
+        return ($this->userID);
+    }
+
+    public function setUserID($newUserID)
+    {
 
 
-                if ($newUserId === null) {
-                    $this->userId = null;
-                    return;
-                }
-
-                $newUserId = filter_var($newUserId, FILTER_VALIDATE_INT);
-                if (empty($newUserId) === true) {
-                    throw (new InvalidArgumentException ("userId invalid"));
-                }
-                $this->userId = $newUserId;
+        if ($newUserID === null) {
+            $this->userID = null;
+            return;
         }
 
-        public function getRating($rating){
-            return($this->rating);
+        $newUserID = filter_var($newUserID, FILTER_VALIDATE_INT);
+        if (empty($newUserID) === true) {
+            throw (new InvalidArgumentException ("userId invalid"));
         }
+        $this->userID = $newUserID;
+    }
 
-        public function setRating($rating){
-                if ($rating === null){
-                    $this->rating = null;
-                    return;
-                }
+    public function getRating()
+    {
+        return ($this->rating);
+    }
+
+    public function setRating($rating)
+    {
+        $rating = filter_var($rating, FILTER_SANITIZE_STRING);
+        if ($rating === false){
+            throw(new InvalidArgumentException("Rating is corrupt or empty"));
         }
+        $rating = strtolower($rating);
 
-
-        public function getTime($time){
-            return ($this->time);
+        if ($rating === "fast"){
+            $this->rating = $rating;
+        } elseif ($rating === "casual"){
+            $this->rating = $rating;
+        } elseif ($rating === "fine"){
+            $this->rating = $rating;
+        } else {
+            throw (new RangeException("Rating must be fast, casual, or fine"));
         }
+    }
+    
 
-        public function setTime($time)
-        {
-                if ($time === null) {
-                $this->time = null;
+
+    public function getdate()
+    {
+        return ($this->date);
+    }
+
+    public function setdate($date)  
+    {
+        //If date is null, set current time and date
+            if($date === null) {
+                $this->date = new DateTime();
                 return;
-        }
+            }
+
+        // store the schedule start date
+        try {
+            $date = $this->validateDate($date);
+        } catch(InvalidArgumentException $invalidArgument) {
+            throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
+        } catch(RangeException $range) {
+            throw(new RangeException($range->getMessage(), 0, $range));
         }
 
-        function validateDate($time)
-        {
-            // base case: if the date is a DateTime object, there's no work to be done
-                if (is_object($time) === true && get_class($time) === "DateTime") {
-                    return ($time);
-                }
-                // treat the date as a mySQL date string: Y-m-d H:i:s
-                $time = trim($time);
-                if ((preg_match("/^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})$/", $time, $matches)) !== 1) {
-                    throw(new InvalidArgumentException("date is not a valid date"));
-                }
-                // verify the date is really a valid calendar date
-                $year = intval($matches[1]);
-                $month = intval($matches[2]);
-                $day = intval($matches[3]);
-                $hour = intval($matches[4]);
-                $minute = intval($matches[5]);
-                $second = intval($matches[6]);
-                if (checkdate($month, $day, $year) === false) {
-                    throw(new RangeException("date $time is not a Gregorian date"));
-                }
-
-
-
-        }
-        public function JsonSerialize()
-        {
-            $fields = get_object_vars($this);
-            return ($fields);
-        }
+        $this->date = $date;
     }
 
-/**
- * Inserts Bulletin into mySQL
- *
- * Inserts this bulletinId into mySQL in intervals
- * @param PDO $pdo connection to
- **/
-public function insert(PDO &$pdo)
-{
-    // make sure bulletin doesn't already exist
-    if ($this->ReviewId !== null) {
-        throw (new PDOException("existing bulletin"));
+    function validateDate($date)  
+    {
+        // base case: if the date is a Datedate object, there's no work to be done
+        if (is_object($date) === true && get_class($date) === "Datedate") {
+            return ($date);
+        }
+        // treat the date as a mySQL date string: Y-m-d
+        $date = trim($date);
+        if ((preg_match("/^(\d{4})-(\d{2})-(\d{2})$/", $date, $matches)) !== 1) {
+            throw(new InvalidArgumentException("date is not a valid date"));
+        }
+        // verify the date is really a valid calendar date
+        $year = intval($matches[1]);
+        $month = intval($matches[2]);
+        $day = intval($matches[3]);
+
+        if (checkdate($month, $day, $year) === false) {
+            throw(new RangeException("datedate is not a Gregorian date"));
+        }
+        return ($date);
     }
-    //create query template
-    $query
-        = "INSERT INTO review(userId, businessId, time)" .
-        "VALUES (:userId, :buisnessId, :time)";
-    $statement = $pdo->prepare($query);
-    // bind the variables to the place holders in the template
-    $parameters = array("userId" => $this->userId, "buisnessId" => $this->buisnessId, "time" => $this->time);
-    $statement->execute($parameters);
-    //update null bulletinId with what mySQL just gave us
-    $this->reviewId = intval($pdo->lastInsertId());
+
+    public function JsonSerialize()
+    {
+        $fields = get_object_vars($this);
+        return ($fields);
+    }
+
 
     /**
-     * Deletes Bulletin from mySQL
+     * Inserts Bulletin into mySQL
      *
-     * Delete PDO to delete bulletinId
+     * Inserts this bulletinId into mySQL in intervals
+     * @param PDO $pdo connection to
+     **/public function insert(PDO $pdo)
+{
+    // make sure bulletin doesn't already exist
+    if ($this->reviewId !== null) {
+        throw (new PDOException("existing bulletin"));
+    }
+        //create query template
+        $query = "INSERT INTO review (userID, businessID, rating, date)
+                 VALUES (:userID, :businessID, :rating, :date)";
+        $statement = $pdo->prepare($query);
+
+        $d = $this->date->format("Y-m-d");
+        // bind the variables to the place holders in the template
+        $parameters = array("userID" => $this->userID, "businessID" => $this->businessId,"rating" => $this->rating, "date" => $d);
+        $statement->execute($parameters);
+    
+        //update null bulletinId with what mySQL just gave us
+        $this->reviewId = intval($pdo->lastInsertId());
+}
+    public function update(PDO $pdo)
+    {
+
+        $query = "UPDATE review SET userID = :userID, businessID = :businessID, rating = :rating, date = :date ";
+        $statement = $pdo->prepare($query);
+
+        $d = $this->date->format("Y-m-d");
+
+        $parameters = array ("userID" => $this->userID, "businessID" => $this->businessId, "rating" => $this->rating, "date" => $d );
+        $statement->execute($parameters);
+    }
+    
+    
+        /**
+         * Deletes Bulletin from mySQL
+         *
+         * Delete PDO to delete bulletinId
+         * @param PDO $pdo
+         **/
+    public function delete(PDO $pdo)
+    {
+
+        //create query template
+        $query = "DELETE FROM review WHERE reviewID = :reviewID";
+        $statement = $pdo->prepare($query);
+
+        //bind the member variables to the place holder in the template
+        $parameters = array("reviewID" => $this->reviewId);
+        $statement->execute($parameters);
+    }
+
+    /**
+     * Get all reviews
+     * 
+     * @param PDO $pdo pointer to PDO
+     * @return mixed reviews
+     */
+
+    public static function getAllReviews(PDO $pdo)
+    {
+        // create query template
+        $query = "SELECT reviewID, businessID, userID, rating, date FROM review";
+        $statement = $pdo->prepare($query);
+        $statement->execute();
+        $statement->setFetchMode(PDO::FETCH_ASSOC);
+        $reviews = new SplFixedArray($statement->rowCount());
+        // grab the bulletin from mySQL
+        while ($row = $statement->fetch()) {
+            try {
+                if ($row !== false) {
+                    $date = new DateTime($row["date"]);
+                    $review = new Review ($row["reviewID"], $row["businessID"], $row["userID"], $row["rating"], $date->format("Y-m-d"));
+                    $reviews[$reviews->key()] = $review;
+                    $reviews->next();
+                }
+            } catch (Exception $exception) {
+                // if the row couldn't be converted, rethrow it
+                throw(new PDOException($exception->getMessage(), 0, $exception));
+            }
+        }
+        return ($reviews);
+    }
+
+    /**
+     * get business by category
+     * 
      * @param PDO $pdo
-     **/
-    public function delete(PDO &$pdo) {
-    // enforce the bulletin is not null
-    if($this->reviewId === null) {
-        throw(new PDOException("unable to delete a bulletin that does not exist"));
-    }
-    //create query template
-    $query = "DELETE FROM review WHERE ReviewId = :ReviewId";
-    $statement = $pdo->prepare($query);
-    //bind the member variables to the place holder in the template
-    $parameters = array("reviewId" => $this->ReviewId);
-    $statement->execute($parameters);
-}
+     * @param $reviewId
+     * @return null|review
+     */
 
-
-
-    public static function getAllReviews(PDO &$pdo) {
-    // create query template
-    $query = "SELECT reviewId, businessId, userId, time, FROM review";
-    $statement = $pdo->prepare($query);
-    // grab the bulletin from mySQL
-    try {
-        $review = null;
-        $statement->setFetchMode(PDO::FETCH_ASSOC);
-        $row = $statement->fetch();
-        if($row !== false) {
-            $review = new Review ($row["reviewId"], $row["businessId"], $row["userId"], $row["time"]);
+        public static function getReviewByReviewID(PDO $pdo, $reviewId)
+        {
+            if ($reviewId === false) {
+                throw(new PDOException(""));
+            }
+            // create query template
+            $query = "SELECT reviewID, businessID, userID, date, rating FROM review WHERE reviewID = :reviewID";
+            $statement = $pdo->prepare($query);
+            // bind the bulletinid to the place holder in the template
+            $parameters = array("reviewID" => $reviewId);
+            $statement->execute($parameters);
+            $review = null;
+            // grab the bulletin from mySQL
+            try {
+                
+                $statement->setFetchMode(PDO::FETCH_ASSOC);
+                $row = $statement->fetch();
+                if ($row !== false) {
+                    $date = new DateTime($row["date"]);
+                    $review = new review ($row["reviewID"], $row["businessID"], $row["userID"], $row["rating"], $date->format("Y-m-d"));
+                }
+            } catch (Exception $exception) {
+                // if the row couldn't be converted, rethrow it
+                throw(new PDOException($exception->getMessage(), 0, $exception));
+            }
+            return ($review);
         }
-    } catch(Exception $exception) {
-        // if the row couldn't be converted, rethrow it
-        throw(new PDOException($exception->getReview(), 0, $exception));
-    }
-    return ($review);
-}
-    public static function getBusinessByBusinessId(PDO &$pdo, $bulletin) {
-    if($bulletin === false) {
-        throw(new PDOException(""));
-    }
-    // create query template
-    $query = "SELECT ReviewId, businessId, userId, time;
-        FROM review WHERE reviewId = :reviewId";
-    $statement = $pdo->prepare($query);
-    // bind the bulletinid to the place holder in the template
-    $parameters = array("reviewId" => $review);
-    $statement->execute($parameters);
-    // grab the bulletin from mySQL
-    try {
-        $review= null;
-        $statement->setFetchMode(PDO::FETCH_ASSOC);
-        $row = $statement->fetch();
-        if($row !== false) {
-            $review = new reviewId ($row["reviewId"], $row["businessId"], $row["userId"], $row["time"]);
-        }
-    } catch(Exception $exception) {
-        // if the row couldn't be converted, rethrow it
-        throw(new PDOException($exception->getMessage(), 0, $exception));
-    }
-    return ($business);
-}
+
 }

@@ -1,30 +1,36 @@
 
 <?php
 
-class Business implements JsonSerializable{
+class Business implements JsonSerializable
+{
     private $businessId;
+    
+    private $address;
 
     private $email;
 
     private $name;
 
     private $phone;
+    
+    private $speed;
 
     private $website;
 
-    private $address;
-
     private $zip;
+    
+    
 
-    public function __construct($newBusinessId, $newEmail, $newName, $newPhone, $newWebsite, $newAddress, $newZip )
+    public function __construct($newBusinessId, $newAddress, $newEmail, $newName, $newPhone, $newSpeed, $newWebsite, $newZip)
     {
         try {
             $this->setBusinessId($newBusinessId);
+            $this->setAddress($newAddress);
             $this->setEmail($newEmail);
             $this->setName($newName);
             $this->setPhone($newPhone);
+            $this->setSpeed($newSpeed);
             $this->setWebsite($newWebsite);
-            $this->setAddress($newAddress);
             $this->setZip($newZip);
         } catch (InvalidArgumentException $invalidArgument) {
             //rethrow the exception to the caller
@@ -49,24 +55,41 @@ class Business implements JsonSerializable{
     }
 
     /**
-     * mutator method for the buisnessId
-     * @param int $newBuisnessId unique value to represent a user $newBuisnessId
+     * mutator method for the businessId
+     * @param int $newBusinessId unique value to represent a user $newBusinessId
      * @throws InvalidArgumentException for invalid content
      **/
     public function setBusinessId($newBusinessId)
     {
-// base case: if the buisnessId is null,
+// base case: if the businessId is null,
 // this is a new user without a mySQL assigned id (yet)
         if ($newBusinessId === null) {
-            $this->newBusinessId = null;
+            $this->businessId = null;
             return;
         }
 //verify the User is valid
         $newBusinessId = filter_var($newBusinessId, FILTER_VALIDATE_INT);
         if (empty($newBusinessId) === true) {
-            throw (new InvalidArgumentException ("buisnessID invalid"));
+            throw (new InvalidArgumentException ("businessID invalid"));
         }
         $this->businessId = $newBusinessId;
+    }
+    
+    public function getAddress()
+    {
+        return ($this->address);
+    }
+
+
+    public function setAddress($newAddress)
+    {
+
+        $newAddress = filter_var($newAddress, FILTER_SANITIZE_STRING);
+        if($newAddress === false) {
+            throw (new InvalidArgumentException("address is invalid"));
+        }
+
+        $this->address = $newAddress;
     }
 
     /**
@@ -82,7 +105,7 @@ class Business implements JsonSerializable{
     /**
      * Mutator method for Email
      *
-     * @param string of users' email $newEmail
+     * @param string $newEmail of business's email $newEmail
      * @throws InvalidArgumentException if email does not pass sanitization
      * @throws RangeException if email is longer than 64 characters
      **/
@@ -100,9 +123,9 @@ class Business implements JsonSerializable{
     }
 
     /**
-     * accessor method for First Name
+     * accessor method for Name
      *
-     * @return string for first name
+     * @return string for name
      **/
     public function getName()
     {
@@ -110,9 +133,9 @@ class Business implements JsonSerializable{
     }
 
     /**
-     * Mutator method for First Name
+     * Mutator method for  Name
      *
-     * @param string $newName  for user first name $newFirstName
+     * @param string $newName for business name $newName
      */
     public function setName($newName)
     {
@@ -140,177 +163,240 @@ class Business implements JsonSerializable{
     /**
      * Mutator method for Phone Number
      *
-     * @param int of user phone number $newPhoneNumber
+     * @param int $newPhone of user phone number $newPhoneNumber
      * @throws InvalidArgumentException if phoneNumber is not ctype digits
      * @throws RangeException if int is not 10 digits
      **/
     public function setPhone($newPhone)
     {
-        //verify phone number is valid and digits only
-        if ((ctype_digit($newPhone)) === false) {
-            throw new InvalidArgumentException ("phoneNumber invalid");
-        }
-        if (strlen($newPhone) > 16) {
-            throw (new RangeException ("Phone Number should be formatted 5055558787"));
-        }
+
+        $newPhone = filter_var($newPhone, FILTER_SANITIZE_STRING);
+            if ($newPhone === false){
+                throw (new InvalidArgumentException("Phone number incorrectly formatted"));
+            }
         $this->phone = $newPhone;
     }
 
-    public function getWebsite($newWebsite)
+    /*
+     * Speed Attribute
+     */
+
+    public function getSpeed()
+    {
+        return $this->speed;
+    }
+    /*
+     * speed mutator
+     */
+    public function setSpeed($speed)
+    {
+        $speed = filter_var($speed, FILTER_SANITIZE_STRING);
+        if ($speed === false){
+            throw(new InvalidArgumentException("Speed is corrupt or empty"));
+        }
+        $speed = strtolower($speed);
+
+        if ($speed === "fast"){
+            $this->speed = $speed;
+        } elseif ($speed === "casual"){
+            $this->speed = $speed;
+        } elseif ($speed === "fine"){
+            $this->speed = $speed;
+        } else {
+            throw (new RangeException("Speed must be fast, casual, or fine"));
+        }
+    }
+    /*Accessor for Website
+     * @return Website
+     *
+     */
+
+    public function getWebsite()
     {
         return ($this->website);
     }
 
     /**
+     * @param $newWebsite
      * Mutator for Website
      *
      */
     public function setWebsite($newWebsite)
     {
 
-
         $newWebsite = filter_var($newWebsite, FILTER_SANITIZE_STRING);
+        if($newWebsite === false) {
+            throw(new InvalidArgumentException("new website is invalid"));
+        }
+        
         if (strlen($newWebsite) > 128) {
             throw (new RangeException ("Website is too long."));
         }
+
+        $this->website = $newWebsite;
     }
 
 
-    public function getAddress($newAddress){
-    return ($this->address);
-    }
-
-
-    public function setAddress($newAddress)
+    /**
+     * Mutator method for Zip Number
+     *
+     * $Zip of zip code number $newZip
+     */
+    public function getZip()
     {
-
-        $newAddress = filter_var($newAddress, FILTER_SANITIZE_STRING);
-        if ($newAddress === null) {
-            $this->address = null;
-            return;
-            }
-    }
-
-
-    public function getZip($newZip){
         return ($this->zip);
     }
-
+    /*
+     * 
+     * param int $newZip
+     * @throws RangeException when $newZip is not 5
+     */
     public function setZip($newZip)
     {
+        $newZip = filter_var($newZip, FILTER_VALIDATE_INT);
+
+        if ($newZip === false){
+            throw (new InvalidArgumentException("Zip must ba an inteter"));
+        }
 
         if (strlen($newZip) > 5) {
-            throw (new RangeExecption("Zip code is not valid."));
+            throw (new RangeException("Zip code is not valid."));
         }
+
+        $this->zip = $newZip;
     }
+    
 
-
-
-   /* public function getSpeed($newSpeed){
-            //!!!! !NEED HELP !!!!!
-    }      I do not kno how I would write this.
-
-    Public function setSpeed($newSpeed){
-
-    }*/
+    
     public function JsonSerialize()
     {
         $fields = get_object_vars($this);
         return ($fields);
     }
-}
-/**
- * Inserts Bulletin into mySQL
- *
- * Inserts this bulletinId into mySQL in intervals
- * @param PDO $pdo connection to
- **/
-/**
- * Inserts User into mySQL
- *
- * Inserts this userId into mySQL in intervals
- * @param PDO $pdo connection to
- **/
-public function insert(PDO &$pdo)
-{
-    // make sure user doesn't already exist
-    if ($this->buisnessId !== null) {
-        throw (new PDOException("existing user"));
-    }
-    //create query template
-    $query
-        = "INSERT INTO business(businessId, email, name, address, website, phone)
-        VALUES (businessId, email, name, address, website, phone)";
-    $statement = $pdo->prepare($query);
-    // bind the variables to the place holders in the template
-}
-public function delete(PDO &$pdo) {
-    // enforce the bulletin is not null
-    if($this->businessId === null) {
-        throw(new PDOException("unable to delete a bulletin that does not exist"));
-    }
-    //create query template
-    $query = "DELETE FROM business WHERE businessId = :businessId";
-    $statement = $pdo->prepare($query);
-    //bind the member variables to the place holder in the template
-    $parameters = array("businessId" => $this->businessId);
-    $statement->execute($parameters);
 
-/**
- * Get all Bulletins
- *
- * @param PDO $pdo pointer to PDO connection, by reference
- * @return mixed| buisness
- **/
-public static function getAllBusiness(PDO &$pdo) {
-    // create query template
-    $query = "SELECT business, businessId, email, name, address, website, phone)";
-    $statement = $pdo->prepare($query);
-    // grab the bulletin from mySQL
-    try {
-        $bulletin = null;
-        $statement->setFetchMode(PDO::FETCH_ASSOC);
-        $row = $statement->fetch();
-        if($row !== false) {
-            $bulletin = new Business ($row["businessId"], $row["userId"], $row["email"], $row["name"], $row["address"], $row["website"], $row["phone"] );
+    /**
+     * Inserts Bulletin into mySQL
+     *
+     * Inserts this bulletinId into mySQL in intervals
+     * @param PDO $pdo connection to
+     **/
+    /**
+     * Inserts User into mySQL
+     *
+     * Inserts this userId into mySQL in intervals
+     * @param PDO $pdo connection to
+     **/
+    public function insert(PDO $pdo)
+    {
+        //create query template
+        $query = "INSERT INTO business(address, email, name, phone, speed, website, zip)
+              VALUES (:address, :email, :name, :phone, :speed, :website, :zip)";
+        $statement = $pdo->prepare($query);
+        // bind the variables to the place holders in the template
+        $parameters = array("address" => $this->address, "email" => $this->email, "name"=> $this->name, "phone"=> $this->phone, "speed"=> $this->speed, "website"=> $this->website, "zip"=> $this->zip);
+        $statement->execute($parameters);
+
+        $this->businessId = intval($pdo->lastInsertId());
+    }
+
+    /**
+     * @param PDO $pdo
+     */
+    public function update(PDO $pdo)
+    {
+        
+            $query = "UPDATE business SET address = :address, email = :email, name = :name, phone = :phone, speed = :speed, website = :website, zip = :zip
+                      WHERE businessId = :businessId";
+            $statement = $pdo->prepare($query);
+
+            $parameters = array ("address" => $this->address, "email" => $this->email, "name"=> $this->name, "phone"=> $this->phone,
+                                    "speed"=> $this->speed, "website"=> $this->website, "zip"=> $this->zip, "businessId" => $this->businessId);
+            $statement->execute($parameters);
+    }
+
+
+    /**
+     * @param PDO $pdo
+     */
+    public function delete(PDO $pdo)
+    {
+        // enforce the bulletin is not null
+        if ($this->businessId === null) {
+            throw(new PDOException("unable to delete a business that does not exist"));
         }
-    } catch(Exception $exception) {
-        // if the row couldn't be converted, rethrow it
-        throw(new PDOException($exception->getMessage(), 0, $exception));
+        //create query template
+        $query = "DELETE FROM business WHERE businessId = :businessId";
+        $statement = $pdo->prepare($query);
+        //bind the member variables to the place holder in the template
+        $parameters = array("businessId" => $this->businessId);
+        $statement->execute($parameters);
     }
-    return ($bulletin);
-}
-/**
- * get bulletin by category
- *
- * @param PDO $pdo pointer to PDO connection, by reference
- * @param mixed info for $business
- * @return null|buisness
- **/
-public static function getBusinessByBusinessId(PDO &$pdo, $bulletin) {
-    if($bulletin === false) {
-        throw(new PDOException(""));
-    }
-    // create query template
-    $query = "SELECT businessId, name, phone, email, website, address, zip
-        FROM business WHERE businessId = :buisnessId";
-    $statement = $pdo->prepare($query);
-    // bind the bulletinid to the place holder in the template
-    $parameters = array("BusinessId" => $business);
-    $statement->execute($parameters);
-    // grab the bulletin from mySQL
-    try {
-        $review= null;
+
+    /**
+     * Get all Businesses
+     *
+     * @param PDO $pdo pointer to PDO connection, by reference
+     * @return mixed| business
+     **/
+    public static function getAllBusiness(PDO $pdo)
+    {
+        // create query template
+        $query = "SELECT businessId, address, email, name,  phone, speed, website, zip FROM business";
+        $statement = $pdo->prepare($query);
+        $statement->execute();
         $statement->setFetchMode(PDO::FETCH_ASSOC);
-        $row = $statement->fetch();
-        if($row !== false) {
-            $buinsess = new Business ($row["businessId"], $row["userId"], $row["email"], $row["name"], $row["address"], $row["website"], $row["phone"] );
+        $businesses = new SplFixedArray($statement->rowCount());
+
+        // grab the bulletin from mySQL
+        while($row = $statement->fetch()) {
+            try {
+                if ($row !== false) {
+                    $business = new Business ($row["businessId"], $row["address"], $row["email"], $row["name"], $row["phone"], $row["speed"], $row["website"], $row["zip"]);
+                    $businesses[$businesses->key()] = $business;
+                    $businesses->next();
+                }
+            } catch (Exception $exception) {
+                // if the row couldn't be converted, rethrow it
+                throw(new PDOException($exception->getMessage(), 0, $exception));
+            }
         }
-    } catch(Exception $exception) {
-        // if the row couldn't be converted, rethrow it
-        throw(new PDOException($exception->getMessage(), 0, $exception));
+        return ($businesses);
     }
-    return ($business);
+
+    /**
+     * get business by category
+     *
+     * @param PDO $pdo pointer to PDO connection, by reference
+     * @param int $businessId for $business
+     * @return null|business
+     **/
+    public static function getBusinessByBusinessId(PDO $pdo, $businessId)
+    {
+        if ($businessId === false) {
+            throw(new PDOException(""));
+        }
+        // create query template
+        $query = "SELECT businessId, address, email, name, phone,speed, website, zip
+        FROM business WHERE businessId = :businessId";
+        $statement = $pdo->prepare($query);
+        // bind the bulletinid to the place holder in the template
+        $parameters = array("businessId" => $businessId);
+        $statement->execute($parameters);
+        $business = null;
+        // grab the bulletin from mySQL
+        try {
+            
+            $statement->setFetchMode(PDO::FETCH_ASSOC);
+            $row = $statement->fetch();
+            if ($row !== false) {
+                $business = new Business ($row["businessId"],  $row["address"], $row["email"], $row["name"],$row["phone"], $row["speed"], $row["website"], $row["zip"]);
+            }
+        } catch (Exception $exception) {
+            // if the row couldn't be converted, rethrow it
+            throw(new PDOException($exception->getMessage(), 0, $exception));
+        }
+        return ($business);
+    }
 }
 
 
