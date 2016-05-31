@@ -794,6 +794,79 @@
 
                 <br><br><br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/elpescador.jpg">
+                        <h2>El Pescadoor Restaurant</h2>
+                        <p>1794 Hwy 173   Navajo Dam, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/faay!.jpg">
+                        <h2>Fa Ay! Chihuahua Tortilla</h2>
+                        <p>913 W. Broadway   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/frmthub.jpg">
+                        <h2>Farmington Hub Brewery & Grill</h2>
+                        <p>914 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/fiesta.jpg">
+                        <h2>Fiesta Mexican Family Restaurant</h2>
+                        <p>3100 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/firehouse.jpg">
+                        <h2>Fire House Java & Cuisine</h2>
+                        <p>5150 College Blvd. Ste. 206   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/francisas.jpg">
+                        <h2>Francisa's</h2>
+                        <p>1000 N. Butler   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/fuddruckers.jpg">
+                        <h2>Fuddrucker's</h2>
+                        <p>4601 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/furrs.jpg">
+                        <h2>Furr's Family Restaurant</h2>
+                        <p>3030 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/goldenc.jpg">
+                        <h2>Golden Corral</h2>
+                        <p>1715 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
 
 
 
