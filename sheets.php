@@ -940,6 +940,52 @@
 
                 <br><br><br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/losbarelas.jpg">
+                        <h2>Los Barelas</h2>
+                        <p>1547 W. Aztec Blvd.   Aztec, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/loshermanitos.jpg">
+                        <h2>Los Hermanitos Restaurant</h2>
+                        <p>3501 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/loshermanitos2.jpg">
+                        <h2>Los Hermanitos Restaurant</h2>
+                        <p>2400 W. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/losricos.jpg">
+                        <h2>Los Rios Cafe</h2>
+                        <p>915 Farmington Ave Orchard Plaza  Farmimgton, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/bistroaztec.jpg">
+                        <h2>Main Street Bistro</h2>
+                        <p>122 N. Main   Aztec,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/mikasa.jpg">
+                        <h2>Mikasa Japanese Cuisine</h2>
+                        <p>400 W. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
 
 
 
