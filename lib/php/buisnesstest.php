@@ -1,6 +1,6 @@
 <?php
 require_once ("../../fastcasualfine.php");
-//require_once("autoload.php");
+require_once("autoload.php");
 require_once ("buisness.php");
 
 
@@ -16,26 +16,25 @@ $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
 $pdo = new PDO($dsn, $config["username"], $config["password"], $options);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-/*
-$bus = new Business(null,"5757 runnermill ne", "run@mill.com", "RunningMan", "878-9999", "fast", "www.running.com", 77777);
+
+/*$bus = new Business(null,"5757 runnermill ne", "run@mill.com", null, "RunningMan", "878-9999", "fast", "www.running.com", 77777);
 
 $bus->insert($pdo);
-$bus->setEmail("walk@mill.com");
-$bus->setName("Walking Man");
+$bus->setEmail("LAME@mill.com");
+$bus->setName("LAME Man");
 
 try {
     $bus->update($pdo);
 }catch (Exception $e) {
     echo $e->getMessage();
-}
+}*/
 
 
+//$bus->delete($pdo);
 
-$bus->delete($pdo);
-*/
 
-//$bus = Business::getBusinessByBusinessId($pdo, 19);
+//$bus = Business::getBusinessByBusinessId($pdo, 7);
 
-$businesses = Business::getAllBusiness($pdo);
+//$businesses = Business::getAllBusiness($pdo);
 
-var_dump($businesses);
+//var_dump($businesses);

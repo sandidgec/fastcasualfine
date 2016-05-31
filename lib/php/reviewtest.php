@@ -32,5 +32,5 @@ try {
 
 //$r = review::getReviewByReviewID($pdo, 19);
 
-$rList = review::getAllReviews($pdo);
-var_dump($rList);
+//$rList = review::getAllReviews($pdo);
+//var_dump($rList);
