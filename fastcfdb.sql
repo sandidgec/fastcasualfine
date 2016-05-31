@@ -7,14 +7,16 @@ DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS reviews;
 
 CREATE TABLE business(
-  businessID INT UNSIGNED AUTO_INCREMENT NOT NULL,
-  name VARCHAR(32) NOT NULL,
-  email VARCHAR(64),
-  website VARCHAR(64),
+  businessId INT UNSIGNED AUTO_INCREMENT NOT NULL,
   address VARCHAR(32),
+  email VARCHAR(64),
+  images VARCHAR(64),
+  name VARCHAR(32) NOT NULL,
+  phone VARCHAR(12),
+  speed VARCHAR(15),
+  website VARCHAR(64),
   zip INT(8),
-  phone INT(16),
-  PRIMARY KEY (businessID)
+  PRIMARY KEY (businessId)
 );
 
 CREATE TABLE user(
@@ -29,13 +31,12 @@ CREATE TABLE user(
 
 );
 
-CREATE TABLE reviews(
+CREATE TABLE review(
   reviewID INT UNSIGNED AUTO_INCREMENT NOT NULL,
   businessID INT UNSIGNED NOT NULL,
   userID INT UNSIGNED NOT NULL,
-  time DATETIME,
-  review TEXT,
-  foodType VARCHAR (2),
+  date DATETIME NOT NULL ,
+  rating VARCHAR(16),
   INDEX(userID),
   INDEX(businessID),
   FOREIGN KEY (userID) REFERENCES user (userID),
