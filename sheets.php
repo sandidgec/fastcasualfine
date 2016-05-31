@@ -620,6 +620,56 @@
 
                 <br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/bluemoon.jpg">
+                        <h2>Blue Moon Diner</h2>
+                        <p>1819 E. 20th. st.  Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/boons.jpg">
+                        <h2>Boon's Family Thai BBQ</h2>
+                        <p>321 W. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/64.jpg">
+                        <h2>Cafe 64</h2>
+                        <p>4368 US Hwy 64   Kirtland, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/64f.jpg">
+                        <h2>Cafe 64</h2>
+                        <p>1101 E. Murray Dr.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <h2>Canon Cafe</h2>
+                        <p>5101 N. Dustin   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <h2>Captain D's Seafood</h2>
+                        <p>1735 E. Main, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
 
 
 
