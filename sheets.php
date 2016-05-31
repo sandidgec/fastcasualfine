@@ -867,6 +867,29 @@
 
                 <br><br><br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/greatharvest.png">
+                        <h2>Great Harvest Bread Co.</h2>
+                        <p>4009 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/habanerof.jpg">
+                        <h2>Habanero Grill</h2>
+                        <p>2834 E Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/habanerof.jpg">
+                        <h2>Habanero Grill</h2>
+                        <p>910 N.E.  Aztec Blvd.   Aztec, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
 
 
 
