@@ -527,7 +527,7 @@
 
         </div><!--row-->
 
-    <br><br><br>
+    <br><br><br><br><br>
 
         <div class="row">
             <div class="col-md-4 text-center">
@@ -550,6 +550,8 @@
 
         </div><!--row-->
 
+    <br><br><br>
+
         <div class="row">
             <div class="col-md-4 text-center">
                 <img class="circleimage" src="lib/imagesfast/wendylogo.png">
@@ -568,6 +570,83 @@
             </div>
 
         </div><!--row-->
+
+    <br><br><br><be><br>
+                <h2>Casual</h2>
+
+            <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/awrootbeer.jpg">
+                        <h2>A & W Rootbeer Drive In</h2>
+                        <p>908 W. Aztec Blvd   Aztec, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/anns.jpg">
+                        <h2>Ann's Restaurant</h2>
+                        <p>1003 W. Broadway   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/applbees.jpg">
+                        <h2>Applebee's Neighborhood Grill & Bar</h2>
+                        <p>4601 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/arches.jpg">
+                        <h2>Arches Chinese Cuisine</h2>
+                        <p>1770 E. 20th. st.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/ashkiis.jpg">
+                        <h2>Ashkii's Navajo Grill</h2>
+                        <p>123 W. Broadway   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/aztecrestaurant.jpg">
+                        <h2>Aztec Restaurant</h2>
+                        <p>107 E. Aztec Blvd.   Aztec, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div><!--container-->
 

@@ -284,7 +284,7 @@ class review implements JsonSerializable
             // create query template
             $query = "SELECT reviewID, businessID, userID, date, rating FROM review WHERE reviewID = :reviewID";
             $statement = $pdo->prepare($query);
-            // bind the bulletinid to the place holder in the template
+            // bind the reviewId to the place holder in the template
             $parameters = array("reviewID" => $reviewId);
             $statement->execute($parameters);
             $review = null;
@@ -302,6 +302,58 @@ class review implements JsonSerializable
                 throw(new PDOException($exception->getMessage(), 0, $exception));
             }
             return ($review);
+        }
+
+        public static function getALLReviewsByBusinessID(PDO $pdo)
+        {
+            // create query template
+            $query = "SELECT reviewID, businessID, userID, rating, date FROM review WHERE businessID = :businessID";
+            $statement = $pdo->prepare($query);
+
+            $statement->execute();
+            $statement->setFetchMode(PDO::FETCH_ASSOC);
+            $reviews = new SplFixedArray($statement->rowCount());
+            // grab the bulletin from mySQL
+            while ($row = $statement->fetch()) {
+                try {
+                    if ($row !== false) {
+                        $date = new DateTime($row["date"]);
+                        $review = new Review ($row["reviewID"], $row["businessID"], $row["userID"], $row["rating"], $date->format("Y-m-d"));
+                        $reviews[$reviews->key()] = $review;
+                        $reviews->next();
+                    }
+                } catch (Exception $exception) {
+                    // if the row couldn't be converted, rethrow it
+                    throw(new PDOException($exception->getMessage(), 0, $exception));
+                }
+            }
+            return ($reviews);
+        }
+
+        public static function getAllReviewsByUserID(PDO $pdo)
+        {
+            // create query template
+            $query = "SELECT reviewID, businessID, userID, rating, date FROM review WHERE userID = :userID";
+            $statement = $pdo->prepare($query);
+            
+            $statement->execute();
+            $statement->setFetchMode(PDO::FETCH_ASSOC);
+            $reviews = new SplFixedArray($statement->rowCount());
+            // grab the bulletin from mySQL
+            while ($row = $statement->fetch()) {
+                try {
+                    if ($row !== false) {
+                        $date = new DateTime($row["date"]);
+                        $review = new Review ($row["reviewID"], $row["businessID"], $row["userID"], $row["rating"], $date->format("Y-m-d"));
+                        $reviews[$reviews->key()] = $review;
+                        $reviews->next();
+                    }
+                } catch (Exception $exception) {
+                    // if the row couldn't be converted, rethrow it
+                    throw(new PDOException($exception->getMessage(), 0, $exception));
+                }
+            }
+            return ($reviews);
         }
 
 }

@@ -10,6 +10,7 @@ CREATE TABLE business(
   businessId INT UNSIGNED AUTO_INCREMENT NOT NULL,
   address VARCHAR(32),
   email VARCHAR(64),
+  images VARCHAR(64),
   name VARCHAR(32) NOT NULL,
   phone VARCHAR(12),
   speed VARCHAR(15),
