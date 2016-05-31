@@ -655,15 +655,38 @@
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <img class="circleimage" src="lib/imagescasual/canon.jpg">
                         <h2>Canon Cafe</h2>
                         <p>5101 N. Dustin   Farmington,N.M.</p>
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <img class="circleimage" src="lib/imagescasual/captaind.jpg">
                         <h2>Captain D's Seafood</h2>
-                        <p>1735 E. Main, N.M.</p>
+                        <p>1735 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/cecilias.jpg">
+                        <h2>Cecilia's Hispanic & Mexican Restaurant</h2>
+                        <p>   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <h2></h2>
+                        <p>   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <h2></h2>
+                        <p>, N.M.</p>
                     </div>
 
                 </div><!--row-->
