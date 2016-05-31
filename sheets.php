@@ -744,6 +744,58 @@
 
                 <br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/dennys.jpg">
+                        <h2>Denny's Restaurant</h2>
+                        <p>600 Scott Ave.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/dickeys.jpg">
+                        <h2>Dickey's Babeque</h2>
+                        <p>3701 E. Messina Dr. Bldg. 100   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/djs.jpg">
+                        <h2>DJ's Pizza</h2>
+                        <p>410 W. Broadway   Bloomfield, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/docs.jpg">
+                        <h2>Doc's Place</h2>
+                        <p>4130 US Hwy 64   Kirtland, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/donamaria.jpg">
+                        <h2>Dona Maria Tortillas</h2>
+                        <p>1930 San Juan Blvd. Ste. 1   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/donschuck.jpg">
+                        <h2>Don's Chuck Wagon</h2>
+                        <p>7414 US Hwy 64   Blanco, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+
+
 
 
 
