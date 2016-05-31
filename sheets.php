@@ -620,6 +620,330 @@
 
                 <br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/bluemoon.jpg">
+                        <h2>Blue Moon Diner</h2>
+                        <p>1819 E. 20th. st.  Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/boons.jpg">
+                        <h2>Boon's Family Thai BBQ</h2>
+                        <p>321 W. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/64.jpg">
+                        <h2>Cafe 64</h2>
+                        <p>4368 US Hwy 64   Kirtland, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/64f.jpg">
+                        <h2>Cafe 64</h2>
+                        <p>1101 E. Murray Dr.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/canon.jpg">
+                        <h2>Canon Cafe</h2>
+                        <p>5101 N. Dustin   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/captaind.jpg">
+                        <h2>Captain D's Seafood</h2>
+                        <p>1735 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/cecilias.jpg">
+                        <h2>Cecilia's Hispanic & Mexican Restaurant</h2>
+                        <p>2501 E. 20th st.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/chefbernies.jpg">
+                        <h2>Chef Bernie's Fine Foods Inc.</h2>
+                        <p>910 W. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/chils.jpg">
+                        <h2>Chili's Grill & Bar</h2>
+                        <p>4915 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/clancys.JPG">
+                        <h2>Clancy's Pub</h2>
+                        <p>23703 E. 20th st.  Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/costavida.png">
+                        <h2>Costa Vida</h2>
+                        <p>4009 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/countryc.jpg">
+                        <h2>Country Creations Catering Service</h2>
+                        <p>4205 US Hwy. 64   Kirtland, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/countrykrt.jpg">
+                        <h2>Country Family Restaurant</h2>
+                        <p>4205 US Hwy 64   Kirtland, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/ccbisto.jpg">
+                        <h2>Courtyard By Marriott Hotel & Conference Center</h2>
+                        <h2>The Bistro</h2>
+                        <p>560 Scott Ave.   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/dads.jpg">
+                        <h2>Dad's Diner</h2>
+                        <p>4395 Largo   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/dennys.jpg">
+                        <h2>Denny's Restaurant</h2>
+                        <p>600 Scott Ave.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/dickeys.jpg">
+                        <h2>Dickey's Babeque</h2>
+                        <p>3701 E. Messina Dr. Bldg. 100   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/djs.jpg">
+                        <h2>DJ's Pizza</h2>
+                        <p>410 W. Broadway   Bloomfield, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/docs.jpg">
+                        <h2>Doc's Place</h2>
+                        <p>4130 US Hwy 64   Kirtland, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/donamaria.jpg">
+                        <h2>Dona Maria Tortillas</h2>
+                        <p>1930 San Juan Blvd. Ste. 1   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/donschuck.jpg">
+                        <h2>Don's Chuck Wagon</h2>
+                        <p>7414 US Hwy 64   Blanco, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/elpescador.jpg">
+                        <h2>El Pescadoor Restaurant</h2>
+                        <p>1794 Hwy 173   Navajo Dam, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/faay!.jpg">
+                        <h2>Fa Ay! Chihuahua Tortilla</h2>
+                        <p>913 W. Broadway   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/frmthub.jpg">
+                        <h2>Farmington Hub Brewery & Grill</h2>
+                        <p>914 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/fiesta.jpg">
+                        <h2>Fiesta Mexican Family Restaurant</h2>
+                        <p>3100 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/firehouse.jpg">
+                        <h2>Fire House Java & Cuisine</h2>
+                        <p>5150 College Blvd. Ste. 206   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/francisas.jpg">
+                        <h2>Francisa's</h2>
+                        <p>1000 N. Butler   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/fuddruckers.jpg">
+                        <h2>Fuddrucker's</h2>
+                        <p>4601 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/furrs.jpg">
+                        <h2>Furr's Family Restaurant</h2>
+                        <p>3030 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/goldenc.jpg">
+                        <h2>Golden Corral</h2>
+                        <p>1715 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/greatharvest.png">
+                        <h2>Great Harvest Bread Co.</h2>
+                        <p>4009 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/habanerof.jpg">
+                        <h2>Habanero Grill</h2>
+                        <p>2834 E Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/habanerof.jpg">
+                        <h2>Habanero Grill</h2>
+                        <p>910 N.E.  Aztec Blvd.   Aztec, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/ihop.png">
+                        <h2>International House Of Pancakes</h2>
+                        <p>3546 E Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/kathys place.jpg">
+                        <h2>Kathy's Place</h2>
+                        <p>305 N. 1st. St.   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/lacabana.jpg">
+                        <h2>La Cabana</h2>
+                        <p>934 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/lacasita.jpg">
+                        <h2>La Casita Cafe</h2>
+                        <p> Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/longdragon.jpg">
+                        <h2>Long Dragon</h2>
+                        <p>5915 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/lohnjohn.jpg">
+                        <h2>Long John Silver's</h2>
+                        <p>3030 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+
+
+
+
 
 
 
