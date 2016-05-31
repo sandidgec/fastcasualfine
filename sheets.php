@@ -890,6 +890,29 @@
 
                 <br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/ihop.png">
+                        <h2>International House Of Pancakes</h2>
+                        <p>3546 E Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/kathys place.jpg">
+                        <h2>Kathy's Place</h2>
+                        <p>305 N. 1st. St.   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/lacabana.jpg">
+                        <h2>La Cabana</h2>
+                        <p>934 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
 
 
 
