@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <div class="">...</div>   
-    <img src="img/sisenor_logomod.jpg" width="400px" height="300px"> 
+    <img class="picture" src="img/sisenor_logomod.jpg">
 
 
         </header>
