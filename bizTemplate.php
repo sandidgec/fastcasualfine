@@ -6,7 +6,7 @@
 </head>
 <h1> </h1>
 <body>
-<div class="jumbotron">
+<div class="jumbotron biz">
     <div class="container">
         <img class="picture" src="img/sisenor_logomod.jpg">
     </div>
