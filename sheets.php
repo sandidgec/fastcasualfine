@@ -913,6 +913,35 @@
 
                 <br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/lacasita.jpg">
+                        <h2>La Casita Cafe</h2>
+                        <p> Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/longdragon.jpg">
+                        <h2>Long Dragon</h2>
+                        <p>5915 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/lohnjohn.jpg">
+                        <h2>Long John Silver's</h2>
+                        <p>3030 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+
+
 
 
 
