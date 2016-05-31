@@ -390,7 +390,7 @@ class Business implements JsonSerializable
             throw(new PDOException(""));
         }
         // create query template
-        $query = "SELECT businessId, address, email, images, name, phone,speed, website, zip
+        $query = "SELECT businessId, address, email, images, name, phone, speed, website, zip
         FROM business WHERE businessId = :businessId";
         $statement = $pdo->prepare($query);
         // bind the bulletinid to the place holder in the template
