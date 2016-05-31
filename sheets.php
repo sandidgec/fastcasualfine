@@ -674,19 +674,70 @@
                     <div class="col-md-4 text-center">
                         <img class="circleimage" src="lib/imagescasual/cecilias.jpg">
                         <h2>Cecilia's Hispanic & Mexican Restaurant</h2>
-                        <p>   Farmington, N.M.</p>
+                        <p>2501 E. 20th st.   Farmington, N.M.</p>
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagescasual/.jpg">
-                        <h2></h2>
-                        <p>   Farmington,N.M.</p>
+                        <img class="circleimage" src="lib/imagescasual/chefbernies.jpg">
+                        <h2>Chef Bernie's Fine Foods Inc.</h2>
+                        <p>910 W. Main   Farmington,N.M.</p>
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagescasual/.jpg">
-                        <h2></h2>
-                        <p>, N.M.</p>
+                        <img class="circleimage" src="lib/imagescasual/chils.jpg">
+                        <h2>Chili's Grill & Bar</h2>
+                        <p>4915 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/clancys.JPG">
+                        <h2>Clancy's Pub</h2>
+                        <p>23703 E. 20th st.  Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/costavida.png">
+                        <h2>Costa Vida</h2>
+                        <p>4009 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/countryc.jpg">
+                        <h2>Country Creations Catering Service</h2>
+                        <p>4205 US Hwy. 64   Kirtland, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/countrykrt.jpg">
+                        <h2>Country Family Restaurant</h2>
+                        <p>4205 US Hwy 64   Kirtland, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/ccbisto.jpg">
+                        <h2>Courtyard By Marriott Hotel & Conference Center</h2>
+                        <h2>The Bistro</h2>
+                        <p>560 Scott Ave.   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/dads.jpg">
+                        <h2>Dad's Diner</h2>
+                        <p>4395 Largo   Farmington, N.M.</p>
                     </div>
 
                 </div><!--row-->
