@@ -1,0 +1,73 @@
+<?php
+//require_once(dirname(dirname(__DIR__)) . "/classes/autoload.php");
+//require_once(dirname(dirname(__DIR__)) . "/lib/xsrf.php");
+//require_once("/etc/apache2/data-design/encrypted-config.php");
+// start the session and create a XSRF token
+if(session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+// prepare an empty reply
+$reply = new stdClass();
+$reply->status = 200;
+$reply->data = null;
+try {
+    // determine which HTTP method was used
+    $method = array_key_exists("HTTP_X_HTTP_METHOD", $_SERVER) ? $_SERVER["HTTP_X_HTTP_METHOD"] : $_SERVER["REQUEST_METHOD"];
+    // sanitize the userId
+    $businessId = filter_input(INPUT_GET, "BusinessId", FILTER_VALIDATE_INT);
+    // grab the mySQL connection
+    //$pdo = connectToEncryptedMySql("/etc/apache2/capstone-mysql/invtext.ini");
+    // handle all RESTful calls to User today
+    // get some or all Users
+    if($method === "GET") {
+        // set an XSRF cookie on GET requests
+        setXsrfCookie("/");
+        if(empty($businessId) === false) {
+            $reply->data = Business::getBusinessByBusinessId($pdo, $userId);
+        } else {
+            $reply->data = Business::getAllBusiness($pdo);
+        }
+        // post to a new User
+    } else if($method === "POST") {
+        // convert POSTed JSON to an object
+        verifyXsrf();
+        $requestContent = file_get_contents("php://input");
+        $requestObject = json_decode($requestContent);
+
+        // handle optional fields
+        $attention = (empty($requestObject->attention) === true ? null : $requestObject->attention);
+        $addressLineTwo = (empty($requestObject->addressLineTwo) === true ? null : $requestObject->addressLineTwo);
+
+        
+        $business = new Business($busienssId, $requestObject->email, $requestObject->name,
+            $requestObject->phone, $requestObject->website, $requestObject->address,
+            $requestObject->zip );
+        $business->insert($pdo);
+        $_SESSION["business"] = $business;
+        $reply->data = "Business created OK";
+        // delete an existing User
+    } else if($method === "DELETE") {
+        verifyXsrf();
+        $business = Business::getBusinessByBusinessId($pdo, $businessId);
+        $business->delete($pdo);
+        $reply->data = "Business deleted OK";
+        // put to an existing User
+    } else if($method === "PUT") {
+        // convert PUTed JSON to an object
+        verifyXsrf();
+        $requestContent = file_get_contents("php://input");
+        $requestObject = json_decode($requestContent);
+        $business = new Business($busienssId, $requestObject->email, $requestObject->name,
+            $requestObject->phone, $requestObject->website, $requestObject->address,
+            $requestObject->zip );
+        $business->update($pdo);
+        $reply->data = "Business updated OK";
+    }
+    // create an exception to pass back to the RESTful caller
+} catch(Exception $exception) {
+    $reply->status = $exception->getCode();
+    $reply->message = $exception->getMessage();
+    unset($reply->data);
+}
+header("Content-type: application/json");
+echo json_encode($reply);

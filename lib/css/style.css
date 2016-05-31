@@ -1,8 +1,38 @@
-h1 {
+.jumbotron{
+    color:#ccc;
+    background-color:#000066;
+    height:150px;
+    margin-top:20px;
+}
+
+.jumbotron, h1{
+    margin-top:15px;
     text-align: center;
 
 }
 
-body{
-  background-color: salmon;
+.jumbotron, p{
+    margin-bottom:60px;
+}
+
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+.circleimage {
+    width:210px;
+    height:210px;
+    border-radius:50%;
+    border:3px solid#060606;
+
+}
+#footer {
+    clear: both;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    padding: 20px 0px;
+    font-size: 80%;
+    text-align: center;
 }
