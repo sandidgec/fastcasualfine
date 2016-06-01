@@ -3,6 +3,8 @@
 <head>
     <?php require_once("lib/css/styles.css.php"); ?>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
     <title>About</title>
 </head>
 <body class="about-body">
@@ -23,7 +25,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="about.php">About</a></li>
+                <li><a href="About.php">About</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -43,4 +45,5 @@
 </div>
 
 </body>
+
 </html>
