@@ -18,15 +18,23 @@
                 </div>
                 <div>
                     <label for="Eamil">Email</label>
-                    <input type="text" class="form-control" id="Eamil" name="Email">
+                    <input type="text" class="form-control" id="email" name="Email">
                 </div>
                 <div class="form-group">
                     <label for="Phone">Phone</label>
-                    <input type="number" class="form-control" id="Phone" name="Phone">
+                    <input type="number" class="form-control" id="phone" name="Phone">
                 </div>
                 <div class="form-group">
                     <label for="Speed">Website</label>
-                    <input type=""
+                    <input type="text" class="form-control" id="speed" name="Speed">
+                </div>
+                <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="text" class="form-control" id="website" name="Website">
+                </div>
+                <div class="form-group">
+                    <label for="Images">Images</label>
+                    <input type="image" class="form-control" id="images" name="Images">
                 </div>
             </form>
         </div>
