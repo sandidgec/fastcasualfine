@@ -1205,6 +1205,155 @@
 
                 <br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sumo.jpg">
+                        <h2>Sumo Grill & Sushi</h2>
+                        <p>3030 E. Main   Farmiongton, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sunshinegrill.jpg">
+                        <h2>Sunshine Grill & Catering</h2>
+                        <p>119 N. Main Ave.   Aztec,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sweatpea.jpg">
+                        <h2>Sweatpea Cafe</h2>
+                        <p>101 N. Main   Aztec, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/tjs.jpg">
+                        <h2>TJ's Diner</h2>
+                        <p>119 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/tequilas.jpg">
+                        <h2>Tequila's Mexican Restaurant</h2>
+                        <p>601 E. Broadway   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/thanthip.jpg">
+                        <h2>Thanthip Thai Cafe</h2>
+                        <p>104 S. Main Ave.   Aztec, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/threerivers.jpg">
+                        <h2>Three Rivers Eatery & Brewhouse</h2>
+                        <p>101 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/trattoria.jpg">
+                        <h2>Trattoria Di Bernardone</h2>
+                        <p>5520 E.   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/villageinn.jpg">
+                        <h2>Village Inn Pancake House Restaurant</h2>
+                        <p>514 Scott Ave.   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/wecks.jpg">
+                        <h2>Weck's</h2>
+                        <p>   Farmiongton, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/wonderful.jpg">
+                        <h2>Wonderful Buffet</h2>
+                        <p>525 E. Broadway   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/wonderfulhouse.jpg">
+                        <h2>Wonderful House Chinese Restaurant</h2>
+                        <p>115 W. Aztec   Aztec, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/zebadiahs.jpg">
+                        <h2>Zebadiah's Restaurant</h2>
+                        <p>2210 E. 20th. St.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/zebras.jpg">
+                        <h2>Zebra's Sports Grill</h2>
+                        <p>1300 W. Navajo St.   Farmington,N.M.</p>
+                    </div>
+
+
+
+                </div><!--row-->
+
+                <br><br><br>
+
+
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1>Fine Food</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <h2></h2>
+                        <p>   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <h2></h2>
+                        <p>   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/.jpg">
+                        <h2></h2>
+                        <p>   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
 
 
 
