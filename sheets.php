@@ -917,7 +917,7 @@
                     <div class="col-md-4 text-center">
                         <img class="circleimage" src="lib/imagescasual/lacasita.jpg">
                         <h2>La Casita Cafe</h2>
-                        <p> Main   Farmington, N.M.</p>
+                        <p>737 W. Main   Farmington, N.M.</p>
                     </div>
 
                     <div class="col-md-4 text-center">
@@ -985,6 +985,106 @@
                 </div><!--row-->
 
                 <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/mons.jpg">
+                        <h2>Mon's Spanish Grill</h2>
+                        <p>121 W. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/nataani.jpg">
+                        <h2>Nataani Nez Restaurant</h2>
+                        <p>1021 Ayani Nez Shopping Center   Shiprock,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/noworries.jpg">
+                        <h2>No Worries Sports Bar & Grill</h2>
+                        <p>1300 W. Navajo st.   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/nori.jpg">
+                        <h2>Nori Japan</h2>
+                        <p>4601 E. Main  Farmimgton, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/nuttyb.jpg">
+                        <h2>Nutty Buddies</h2>
+                        <p>300 N. 1st st.   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/olivegarden.png">
+                        <h2>Olive Garden</h2>
+                        <p>5150 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/paddock.jpg">
+                        <h2>Paddock Caterers</h2>
+                        <p>315 N. Auburn Ave.  Farmimgton, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/pancakealley.jpg">
+                        <h2>Pancake Alley</h2>
+                        <p>501 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/panda express.png">
+                        <h2>Panda Express</h2>
+                        <p>3544 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/pandagarden.jpg">
+                        <h2>Panda Garden</h2>
+                        <p>1100 W. Broadway   Bloomfield, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/qdoba.jpg">
+                        <h2>Qdoba Mexican Grill</h2>
+                        <p>4903 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/querico.jpg">
+                        <h2>Que Rico Restaurant</h2>
+                        <p>1916 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
 
 
 
