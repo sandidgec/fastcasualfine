@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
-    <?php require_once("lib/head-utils.php"); ?>
+    <?php require_once("lib/css/styles.css.php"); ?>
 </head>
 
 <body>
