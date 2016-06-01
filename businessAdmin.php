@@ -29,12 +29,16 @@
                     <input type="text" class="form-control" id="speed" name="Speed">
                 </div>
                 <div class="form-group">
-                    <label for="website">Website</label>
-                    <input type="text" class="form-control" id="website" name="Website">
+                    <label for="Zip">Zip Code</label>
+                    <input type="number" class="form-control" id="zip" name="Zip">
                 </div>
+                <!--<div class="form-group">
+                   <label for="Images">Images</label>
+                   <input type="image" class="form-control" id="images" name="Images">
+               </div>-->
                 <div class="form-group">
-                    <label for="Images">Images</label>
-                    <input type="image" class="form-control" id="images" name="Images">
+                    <label for="Submit">Submit</label>
+                    <input type="submit" class="form-control" id="submit" name="Submit">
                 </div>
             </form>
         </div>
