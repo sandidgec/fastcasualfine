@@ -22,7 +22,7 @@ class Business implements JsonSerializable
     private $zip;
     
     
-
+    
     public function __construct($newBusinessId, $newAddress, $newEmail, $images, $newName, $newPhone, $newSpeed, $newWebsite, $newZip)
     {
         try {

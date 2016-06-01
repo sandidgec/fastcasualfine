@@ -917,7 +917,7 @@
                     <div class="col-md-4 text-center">
                         <img class="circleimage" src="lib/imagescasual/lacasita.jpg">
                         <h2>La Casita Cafe</h2>
-                        <p> Main   Farmington, N.M.</p>
+                        <p>737 W. Main   Farmington, N.M.</p>
                     </div>
 
                     <div class="col-md-4 text-center">
@@ -939,6 +939,271 @@
                 </div><!--row-->
 
                 <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/losbarelas.jpg">
+                        <h2>Los Barelas</h2>
+                        <p>1547 W. Aztec Blvd.   Aztec, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/loshermanitos.jpg">
+                        <h2>Los Hermanitos Restaurant</h2>
+                        <p>3501 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/loshermanitos2.jpg">
+                        <h2>Los Hermanitos Restaurant</h2>
+                        <p>2400 W. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/losricos.jpg">
+                        <h2>Los Rios Cafe</h2>
+                        <p>915 Farmington Ave Orchard Plaza  Farmimgton, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/bistroaztec.jpg">
+                        <h2>Main Street Bistro</h2>
+                        <p>122 N. Main   Aztec,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/mikasa.jpg">
+                        <h2>Mikasa Japanese Cuisine</h2>
+                        <p>400 W. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/mons.jpg">
+                        <h2>Mon's Spanish Grill</h2>
+                        <p>121 W. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/nataani.jpg">
+                        <h2>Nataani Nez Restaurant</h2>
+                        <p>1021 Ayani Nez Shopping Center   Shiprock,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/noworries.jpg">
+                        <h2>No Worries Sports Bar & Grill</h2>
+                        <p>1300 W. Navajo st.   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/nori.jpg">
+                        <h2>Nori Japan</h2>
+                        <p>4601 E. Main  Farmimgton, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/nuttyb.jpg">
+                        <h2>Nutty Buddies</h2>
+                        <p>300 N. 1st st.   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/olivegarden.png">
+                        <h2>Olive Garden</h2>
+                        <p>5150 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/paddock.jpg">
+                        <h2>Paddock Caterers</h2>
+                        <p>315 N. Auburn Ave.  Farmimgton, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/pancakealley.jpg">
+                        <h2>Pancake Alley</h2>
+                        <p>501 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/panda express.png">
+                        <h2>Panda Express</h2>
+                        <p>3544 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/pandagarden.jpg">
+                        <h2>Panda Garden</h2>
+                        <p>1100 W. Broadway   Bloomfield, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/qdoba.jpg">
+                        <h2>Qdoba Mexican Grill</h2>
+                        <p>4903 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/querico.jpg">
+                        <h2>Que Rico Restaurant</h2>
+                        <p>1916 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/ramone.jpg">
+                        <h2>Ramone Authentic Grill</h2>
+                        <p>200 N. 1st St.  Bloomfield, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/redbrick.jpg">
+                        <h2>Red Brick Pizza</h2>
+                        <p>5150 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/riversidepizza.jpg">
+                        <h2>Riverside Pizza Restaurant</h2>
+                        <p>1609 E. 20th St.   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/riverwalkpatio.jpg">
+                        <h2>Riverwalk Patio & Grill</h2>
+                        <p>700 Scott Ave.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/roadside.jpg">
+                        <h2>Roadside Inn Restaurant</h2>
+                        <p>319 S. Bloomfield Bkvd.   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/rubios.jpg">
+                        <h2>Rubio's</h2>
+                        <p>116 S. Main Ave.   Aztec, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/rubys.jpg">
+                        <h2>Rubys</h2>
+                        <p>1901 W. Aztec Blvd.   Atec, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sanchos.jpg">
+                        <h2>Sanchos</h2>
+                        <p>1401 E. Broadway   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sauce.jpg">
+                        <h2>Sauce Restaurant</h2>
+                        <p>6500 Mickey Plaza   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/serioustexas.jpg">
+                        <h2>Serious Texas Barbeque</h2>
+                        <p>3475 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/serioustexasb.jpg">
+                        <h2>Serious Texas Barbeque</h2>
+                        <p>506 W. Broadway   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sisenor.jpg">
+                        <h2>Si Senor</h2>
+                        <p>4015 E. 30th St.   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sonyas2.jpg">
+                        <h2>Sonya's Cookin USA Restaurant</h2>
+                        <p>2001 Bloomfield Hwy.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sonyas.jpg">
+                        <h2>Sonya's Cookin USA Restaurant</h2>
+                        <p>510 S. Bloomfield   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sparerib.png">
+                        <h2>Sparerib BBQ Co.</h2>
+                        <p>1700 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
 
 
 
