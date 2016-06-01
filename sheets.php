@@ -1182,6 +1182,29 @@
 
                 <br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sonyas2.jpg">
+                        <h2>Sonya's Cookin USA Restaurant</h2>
+                        <p>2001 Bloomfield Hwy.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sonyas.jpg">
+                        <h2>Sonya's Cookin USA Restaurant</h2>
+                        <p>510 S. Bloomfield   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sparerib.png">
+                        <h2>Sparerib BBQ Co.</h2>
+                        <p>1700 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
 
 
 
