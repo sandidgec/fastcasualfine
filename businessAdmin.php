@@ -46,7 +46,7 @@
     </div>
 </div>
 <div>
-    <table>
+    <table class="businessAdminTable">
         <tr>
             <td>INFO</td>
             <td>FAKE INFO</td>
