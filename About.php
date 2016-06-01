@@ -3,7 +3,7 @@
 <head>
     <?php require_once("lib/css/styles.css.php"); ?>
 
-    <title>about</title>
+    <title>About</title>
 </head>
 <body class="about-body">
 </body>
