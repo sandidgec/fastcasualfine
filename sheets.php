@@ -1086,6 +1086,102 @@
 
                 <br><br><br><br><br>
 
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/ramone.jpg">
+                        <h2>Ramone Authentic Grill</h2>
+                        <p>200 N. 1st St.  Bloomfield, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/redbrick.jpg">
+                        <h2>Red Brick Pizza</h2>
+                        <p>5150 E. Main   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/riversidepizza.jpg">
+                        <h2>Riverside Pizza Restaurant</h2>
+                        <p>1609 E. 20th St.   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/riverwalkpatio.jpg">
+                        <h2>Riverwalk Patio & Grill</h2>
+                        <p>700 Scott Ave.   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/roadside.jpg">
+                        <h2>Roadside Inn Restaurant</h2>
+                        <p>319 S. Bloomfield Bkvd.   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/rubios.jpg">
+                        <h2>Rubio's</h2>
+                        <p>116 S. Main Ave.   Aztec, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/rubys.jpg">
+                        <h2>Rubys</h2>
+                        <p>1901 W. Aztec Blvd.   Atec, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sanchos.jpg">
+                        <h2>Sanchos</h2>
+                        <p>1401 E. Broadway   Farmington,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sauce.jpg">
+                        <h2>Sauce Restaurant</h2>
+                        <p>6500 Mickey Plaza   Farmington, N.M.</p>
+                    </div>
+
+                    <div id="footer">
+                        Copyright 2016 Cultivating Coders media
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/serioustexas.jpg">
+                        <h2>Serious Texas Barbeque</h2>
+                        <p>3475 E. Main   Farmington, N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/serioustexasb.jpg">
+                        <h2>Serious Texas Barbeque</h2>
+                        <p>506 W. Broadway   Bloomfield,N.M.</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img class="circleimage" src="lib/imagescasual/sisenor.jpg">
+                        <h2>Si Senor</h2>
+                        <p>4015 E. 30th St.   Farmington, N.M.</p>
+                    </div>
+
+                </div><!--row-->
+
+                <br><br><br>
+
 
 
 
