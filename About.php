@@ -29,11 +29,11 @@
     </div><!-- /.container-fluid -->
 </nav><br><br><br>
 <div>
-    <h> 4 Corners Food.com is a indispenable tool for the locals or an out of town visitor</h>
-    <h> in the Farmington area in search of a place to dine and want a rating system of the</h>
-    <h>restaurants along with location and contact information. It's an immensely valuable</h>
-    <h>marketing and advertising medium for the restaurant owner.</h>
-    
+    <h1> 4 Corners Food.com is a indispenable tool for the locals or an out of town visitor</h1>
+    <h1> in the Farmington area in search of a place to dine and want a rating system of the</h1>
+    <h1>restaurants along with location and contact information. It's an immensely valuable</h1>
+    <h1>marketing and advertising medium for the restaurant owner.</h1>
+
 </div><br><br>
 
 <div class="navbar navbar-default navbar-fixed-bottom">
