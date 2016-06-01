@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Admin</title>
     </head>
 <body>
@@ -18,10 +19,10 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" >
+        <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-folder-open" aria-hidden="true"></i> SQL<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-folder-open" aria-hidden="true"></i> Business Admin<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="businessAdmin.php">Business</a></li>
                         <li><a href=""></a></li>
@@ -34,7 +35,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-paper-plane" aria-hidden="true"></i> JavaScript <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-paper-plane" aria-hidden="true"></i> UserAdmin <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="userAdmin.php">User</a></li>
                         <li><a href=""></a></li>
@@ -50,16 +51,9 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-spinner" aria-hidden="true"></i> Learning Css <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-spinner" aria-hidden="true"></i> ReviewsAdmin <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="reviewAdmin.php">Reviews</a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> Learning HTML <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href=""></a></li>
                         <li><a href=""></a></li>
                     </ul>
                 </li>
