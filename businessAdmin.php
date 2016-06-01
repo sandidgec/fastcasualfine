@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>BusinessAdmin</title>
+    <link rel="stylesheet" href="lib/css/adminStyle.css"/>
 </head>
 <body>
 <div class="container">
@@ -43,6 +44,42 @@
             </form>
         </div>
     </div>
+</div>
+<div>
+    <table>
+        <tr>
+            <td>INFO</td>
+            <td>FAKE INFO</td>
+        </tr>
+        <tr>
+            <td>INFO</td>
+            <td>Stuff here</td>
+        </tr>
+        <tr>
+            <td>TITLE</td>
+            <td>Stuff</td>
+        </tr>
+        <tr>
+            <td>TITLE</td>
+            <td>Stuff</td>
+        </tr>
+        <tr>
+            <td>TITEL</td>
+            <td>Stuff</td>
+        </tr>
+        <tr>
+            <td>TITEL</td>
+            <td>Stuff</td>
+        </tr>
+        <tr>
+            <td>SEVEN</td>
+            <td>Stuff</td>
+        </tr>
+        <tr>
+            <td>Eight</td>
+            <td>Stuff</td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>

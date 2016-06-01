@@ -3,10 +3,10 @@
 <head>
     <?php require_once("lib/css/styles.css.php"); ?>
 
-    <title>about</title>
+    <title>About</title>
 </head>
 <body class="about-body">
-</body>
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,4 +42,5 @@
     </div>
 </div>
 
+</body>
 </html>
