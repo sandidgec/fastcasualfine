@@ -217,7 +217,6 @@ class review implements JsonSerializable
         $statement->execute($parameters);
     }
     
-    
         /**
          * Deletes Bulletin from mySQL
          *
