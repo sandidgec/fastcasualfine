@@ -33,61 +33,81 @@
         </div>
     </div>
 
-    <table>
-        <thead>
-         <tr>
-         <th>Date</th>
-        <th>Name/Username</th>
-        <th>Comments&Reviews/th>
-         </tr>
-        </thead>
-         <tbody>
+    <div class="row">
+        <div class="col-md-7">
+            <h2># Comments & Reviews</h2>
+            <div class="media">
+                <div class="media-left">
+                    1997 - Stil in bussiness
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">LoyalCustomer97</h4>
+                    <p>Every time i get off work, an to tired to cook for my family, i rely on Si Senor to satisfy
+                        our cravings, i love eating here, brings my family close together! </p>
+                </div>
+            </div>
 
-           <tr>
-          <td>
-        <code>1/25</code>
-          </td>
-        <td>LoyalCustomer97</td>
-        <td>Every time i get off work, an to tired to cook for my family, i rely on Si Senor to satisfy
-            our cravings, i love eating here, brings my family close together!</td>
-          </tr>
+            <div class="media">
+                <div class="media-left">
+                    2000 - 2003
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Joann Stine </h4>
+                    <p>Never a dull moment eating here. I absolutely LOVE IT!</p>
+                </div>
+            </div>
 
-         <tr>
-             <td>
-                 <code>2/15</code>
-             </td>
-             <td>Joann Stine</td>
-             <td>Never a dull moment eating here. I absolutely LOVE IT!</td>
-         </tr>
+            <div class="media">
+                <div class="media-left">
+                    2004 - 2008
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Lyle17</h4>
+                    <p>Eating here will always make me full, always stacking there plate of food to the max!</p>
+                </div>
+            </div>
 
-           <tr>
-             <td>
-                 <code>6/25</code>
-             </td>
-             <td>Lyle17</td>
-             <td>Eating here will always make me full, always stacking there plate of food to the max, i will always come
-             here to get actually fed!</td>
-           </tr>
+            <div class="media">
+                <div class="media-left">
+                    2009 - 2014
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Shane sky</h4>
+                    <p>Love this place so much i want to eat here for the rest of my life!</p>
+                </div>
+            </div>
+        </div>
 
-           <tr>
-             <td>
-                 <code>8/27</code>
-             </td>
-             <td>Shane kye</td>
-             <td>Love this place so much i want to eat here for the rest of my life!
-             (Not Kidding)</td>
-           </tr>
+        <div class="media">
+            <div class="media-left">
+                20010 - 2014
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Maria Nevarez</h4>
+                <p>
+                    Me encanta este lugar tanto ! que sirven toda mi comida favorita !
+                    Pero ellos no tienen ninguna salsa original que está un poco werid para este establecimiento en particular.?</p>
+            </div>
+        </div>
 
-           <tr>
-             <td>
-                 <code>5/09</code>
-             </td>
-             <td>Lana Bannana</td>
-             <td>Eating here makes me happy, full, and most of all satifyed very much! I wanna make this restuarant my every
-             friday causual dinner!</td>
-           </tr>
-        </tbody>
-        </table>
+        <div id="bottom_in">
+            <div class="restaurant_hours">
+                <h3>
+                    <cufon class="cufon cufon-canvas" alt="Restaurant" style="width; 137px; height: 24px;">
+                        <canvas width="164" height="28" style="width: 164px; height: 28px; top: -6px; left: -3px;">
+                            <cufontext>Restaurant</cufontext>
+                        </canvas>
+                    </cufon>
+                    <cufon class="cufon cufon-canvas" alt="Hours" style="width: 71px; height: 24px;">
+                        <canvas width="92" height="28" style="width: 92px; height: 28px; top: -6px; left: -3px;">
+                            <cufontext>Hours</cufontext>
+                    </cufon>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
