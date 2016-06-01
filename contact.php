@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title> Contact Page </title>
 
-    <link rel="stylesheet" href="../lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/style.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
 </head>
 
 <body>
@@ -89,6 +91,12 @@
                 </a>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <p class="navbar-text pull-center">Copyright 2016 Cultivating Coders</p>
     </div>
 </div>
 
