@@ -35,23 +35,33 @@ try {
         // post to a new User
 
     } else if($method === "POST") {
+
         // convert POSTed JSON to an object
-        verifyXsrf();
+        //verifyXsrf();
+
         $requestContent = file_get_contents("php://input");
         $requestObject = json_decode($requestContent);
 
         // handle optional fields
         $attention = (empty($requestObject->attention) === true ? null : $requestObject->attention);
-        $addressLineTwo = (empty($requestObject->addressLineTwo) === true ? null : $requestObject->addressLineTwo);
 
+        $business = new Business(
+          $businessId,
+          $requestObject->name,
+          $requestObject->address,
+          $requestObject->zip,
+          $requestObject->phone,
+          $requestObject->email,
+          $requestObject->website,
+          $requestObject->speed,
+          "" // Leaving Images Blank for now
+        );
 
-        $business = new Business($busienssId, $requestObject->email, $requestObject->name,
-            $requestObject->phone, $requestObject->website, $requestObject->address,
-            $requestObject->zip );
         $business->insert($pdo);
         $_SESSION["business"] = $business;
         $reply->data = "Business created OK";
         // delete an existing User
+
     } else if($method === "DELETE") {
         verifyXsrf();
         $business = Business::getBusinessByBusinessId($pdo, $businessId);

@@ -4,7 +4,7 @@
 class Business implements JsonSerializable
 {
     private $businessId;
-    
+
     private $address;
 
     private $email;
@@ -14,18 +14,18 @@ class Business implements JsonSerializable
     private $name;
 
     private $phone;
-    
+
     private $speed;
 
     private $website;
 
     private $zip;
-    
-    
-    
-    public function __construct($newBusinessId, $newAddress, $newEmail, $images, $newName, $newPhone, $newSpeed, $newWebsite, $newZip)
+
+    public function __construct($newBusinessId, $newName, $newAddress, $newZip,
+      $newPhone, $newEmail, $newWebsite, $newSpeed, $images)
     {
         try {
+
             $this->setBusinessId($newBusinessId);
             $this->setAddress($newAddress);
             $this->setEmail($newEmail);
@@ -35,6 +35,7 @@ class Business implements JsonSerializable
             $this->setSpeed($newSpeed);
             $this->setWebsite($newWebsite);
             $this->setZip($newZip);
+            
         } catch (InvalidArgumentException $invalidArgument) {
             //rethrow the exception to the caller
             throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
@@ -77,7 +78,7 @@ class Business implements JsonSerializable
         }
         $this->businessId = $newBusinessId;
     }
-    
+
     public function getAddress()
     {
         return ($this->address);
@@ -242,7 +243,7 @@ class Business implements JsonSerializable
         if($newWebsite === false) {
             throw(new InvalidArgumentException("new website is invalid"));
         }
-        
+
         if (strlen($newWebsite) > 128) {
             throw (new RangeException ("Website is too long."));
         }
@@ -261,7 +262,7 @@ class Business implements JsonSerializable
         return ($this->zip);
     }
     /*
-     * 
+     *
      * param int $newZip
      * @throws RangeException when $newZip is not 5
      */
@@ -279,9 +280,9 @@ class Business implements JsonSerializable
 
         $this->zip = $newZip;
     }
-    
 
-    
+
+
     public function JsonSerialize()
     {
         $fields = get_object_vars($this);
@@ -318,7 +319,7 @@ class Business implements JsonSerializable
      */
     public function update(PDO $pdo)
     {
-        
+
             $query = "UPDATE business SET address = :address, email = :email, images = :images, name = :name, phone = :phone, speed = :speed, website = :website, zip = :zip
                       WHERE businessId = :businessId";
             $statement = $pdo->prepare($query);
@@ -399,7 +400,7 @@ class Business implements JsonSerializable
         $business = null;
         // grab the bulletin from mySQL
         try {
-            
+
             $statement->setFetchMode(PDO::FETCH_ASSOC);
             $row = $statement->fetch();
             if ($row !== false) {
@@ -412,6 +413,3 @@ class Business implements JsonSerializable
         return ($business);
     }
 }
-
-
-
