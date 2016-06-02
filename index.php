@@ -18,44 +18,73 @@
     height: 100%;
   }
 
-  .carousel {
+  .tweet-carousel {
     height: 25%;
+  }
+
+  .tweet-carousel .right {
+    padding-left: 0;
+  }
+
+  .tweet-carousel .carousel-indicators li {
+    background-color: #FF0000;
+  }
+
+  .tweet-carousel .carousel-control {
+    background-image: none;
+    color: #FF0000;
   }
 </style>
 
-<body ng-app="home">
+<body ng-app="fastcasualfine">
 
     <?php require_once("lib/navbar.php")?>
 
-    <div id="carousel-example-generic" class="carousel slide"
-      data-ride="carousel" ng-controller="TweetCtrl">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
+    <div class="container">
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
+      <div class="row">
 
-        <div class="item active" ng-repeat="tweet in tweets">
-          <div class="carousel-caption">
-            {{ tweet.text }}
+        <div class="col-md-4">
+        </div>
+
+        <div class="col-md-8">
+
+          <h2>FastCasualFine @ Twitter</h2>
+          <p class="lead">Mention us on Twitter, show up on our homepage!</p>
+
+          <div id="tweetCarousel" class="carousel tweet-carousel slide"
+            data-ride="carousel" ng-controller="TweetCtrl" ng-init="getTweets()">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+
+              <li data-target="#tweetCarousel" data-slide-to="{{ $index }}"
+                ng-repeat="tweet in tweets" ng-class="{active: $index === 0}"></li>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item" ng-repeat="tweet in tweets" ng-class="{active: $index === 0}">
+                <h3 class="text-center">{{ tweet.text }}</h3>
+              </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#tweetCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#tweetCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
+
         </div>
 
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
 
     <hr/>
