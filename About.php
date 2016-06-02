@@ -19,8 +19,8 @@
 <div class="container">
     <h1> FastCasualFine.com is a indispenable tool for the locals or an out of town visitor</h1>
     <h1> in the Farmington area in search of a place to dine and want a rating system of the</h1>
-    <h1>restaurants along with location and contact information. It's an immensely valuable</h1>
-    <h1>marketing and advertising medium for the restaurant owner.</h1>
+    <h1>restaurants along with location and contact information. It's an immensely valuable
+             marketing and advertising medium for the restaurant owner.</h1>
 
 </div>
 <div class="navbar navbar-default navbar-fixed-bottom">
