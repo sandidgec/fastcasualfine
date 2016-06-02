@@ -27,16 +27,16 @@ h1 {
 }
 
 h2 {
-    font-size:32px;
+    font-size:20px;
 }
 
 p {
-    font-size:18px;
+    font-size:12px;
 }
 
 .circleimage {
-    width:210px;
-    height:210px;
+    width:160px;
+    height:160px;
     border-radius:50%;
     border:3px solid#060606;
 

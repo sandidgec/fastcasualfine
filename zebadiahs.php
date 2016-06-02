@@ -16,10 +16,10 @@
 <div class="container">
     <div style="text-align:center;"><img style="border:3px solid black;"
                                          src="lib/imagesfast/blakes.png"
-                                         width="650" height="250" alt="lib/imagesfast/furrs.jpg" />
-        <h2 class="text-center">    </h2>
-        <h2 class="text-center">  3030  E. Main  Farmington, N.M.  </h2>
-        <h2 class="text-center">  (505) 327-6011  </h2>
+                                         width="650" height="250" alt="lib/imagesfast/.jpg" />
+        <h2 class="text-center">  Zebahiah's Restaurant  </h2>
+        <h2 class="text-center">  2210 E. 20th St.  Farmington, N.M.  </h2>
+        <h2 class="text-center">  (505) 327-5979  </h2>
     </div>
 </div>
 
