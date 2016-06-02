@@ -8,3 +8,5 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="css/style.css">
+
+<link rel="short icon" href="images/Logo_converted.ico">

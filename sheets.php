@@ -218,8 +218,7 @@
 
             <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/dunkind.png">
-                <h2>Dunkin' Donuts</h2>
-                <p>3030 E. Main   Farmington, N.M.</p>
+t
             </div>
 
             <div class="col-md-3 text-center">

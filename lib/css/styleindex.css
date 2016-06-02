@@ -40,3 +40,19 @@
 h1{
     position: relative;
 }
+img{
+    height: 210px;
+    width: 210px;
+}
+
+.logo {
+    width:100%;
+    height: auto;
+}
+#margin-tweet{
+    margin-top: 70px;
+
+}
+.col-md-12{
+    background-color: transparent;
+}
