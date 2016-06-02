@@ -17,7 +17,7 @@
     <div style="text-align:center;"><img style="border:3px solid black;"
                                          src="lib/imagesfast/blakes.png"
                                          width="650" height="250" alt="lib/imagesfast/furrs.jpg" />
-        <h2 class="text-center">    </h2>
+        <h2 class="text-center">  Furr's Family Dining   </h2>
         <h2 class="text-center">  3030  E. Main  Farmington, N.M.  </h2>
         <h2 class="text-center">  (505) 327-6011  </h2>
     </div>
