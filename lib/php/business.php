@@ -268,7 +268,7 @@ class Business implements JsonSerializable
      */
     public function setZip($newZip)
     {
-        $newZip = filter_var($newZip, FILTER_VALIDATE_INT);
+        $isZip = filter_var($newZip, FILTER_VALIDATE_INT);
 
         if ($newZip === false){
             throw (new InvalidArgumentException("Zip must ba an inteter"));
@@ -308,7 +308,16 @@ class Business implements JsonSerializable
               VALUES (:address, :email, :images, :name, :phone, :speed, :website, :zip)";
         $statement = $pdo->prepare($query);
         // bind the variables to the place holders in the template
-        $parameters = array("address" => $this->address, "email" => $this->email, "images" => $this->images, "name"=> $this->name, "phone"=> $this->phone, "speed"=> $this->speed, "website"=> $this->website, "zip"=> $this->zip);
+        $parameters = array(
+          "address" => $this->address,
+          "email" => $this->email,
+          "images" => $this->images,
+          "name"=> $this->name,
+          "phone"=> $this->phone,
+          "speed"=> $this->speed,
+          "website"=> $this->website,
+          "zip"=> $this->zip
+        );
         $statement->execute($parameters);
 
         $this->businessId = intval($pdo->lastInsertId());

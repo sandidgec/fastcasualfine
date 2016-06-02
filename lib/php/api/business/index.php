@@ -42,9 +42,6 @@ try {
         $requestContent = file_get_contents("php://input");
         $requestObject = json_decode($requestContent);
 
-        // handle optional fields
-        $attention = (empty($requestObject->attention) === true ? null : $requestObject->attention);
-
         $business = new Business(
           $businessId,
           $requestObject->name,
