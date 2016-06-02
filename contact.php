@@ -10,7 +10,7 @@
     
 </head>
 
-<body>
+<body style="background-color: #E0F4FF;">
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
