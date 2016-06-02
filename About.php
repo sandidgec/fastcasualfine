@@ -5,29 +5,38 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <title>About</title>
+    <?php require_once("lib/navbar.php");?>
+
+
+
 </head>
+
 <body>
 
-<?php require_once("lib/navbar.php");?>
+<body style="background-color:#E0F4FF">
 
-<div class="jumbotron">
-    <div class="container">
-        <h1>About</h1>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>About Us</h1>
     </div>
+</div>
+
+
+<div class="col-md-5">
+    <img class="img-responsive" src="/lib/images/FastCasualFinelogo.jpg" alt="logo">
 </div>
 
 <div class="container">
-    <h1> FastCasualFine.com is a indispenable tool for the locals or an out of town visitor</h1>
-    <h1> in the Farmington area in search of a place to dine and want a rating system of the</h1>
-    <h1>restaurants along with location and contact information. It's an immensely valuable
+    <h1> FastCasualFine.com is a indispenable tool for the locals or an out of town visitor
+     in the Farmington area in search of a place to dine and knowing the waiting limit of the food service.</h1>
+        <h1>Along with location and contact information. It's an immensely valuable
              marketing and advertising medium for the restaurant owner.</h1>
+</div>
 
-</div>
-<div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-        <p class="navbar-text pull-center">Copyright 2016 Cultivating Coders</p>
-    </div>
-</div>
+
+
+
 
 </body>
 

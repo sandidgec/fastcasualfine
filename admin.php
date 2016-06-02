@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Admin</title>
+        <link rel="stylesheet" href="lib/css/adminStyle.css"/>
     </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -15,7 +16,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="admin.php"> Admin</a>
+            <a class="navbar-brand" href="index.php"> </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
