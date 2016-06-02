@@ -4,7 +4,7 @@
 class Business implements JsonSerializable
 {
     private $businessId;
-    
+
     private $address;
 
     private $email;
@@ -14,18 +14,18 @@ class Business implements JsonSerializable
     private $name;
 
     private $phone;
-    
+
     private $speed;
 
     private $website;
 
     private $zip;
-    
-    
-    
-    public function __construct($newBusinessId, $newAddress, $newEmail, $images, $newName, $newPhone, $newSpeed, $newWebsite, $newZip)
+
+    public function __construct($newBusinessId, $newName, $newAddress, $newZip,
+      $newPhone, $newEmail, $newWebsite, $newSpeed, $images)
     {
         try {
+
             $this->setBusinessId($newBusinessId);
             $this->setAddress($newAddress);
             $this->setEmail($newEmail);
@@ -35,6 +35,7 @@ class Business implements JsonSerializable
             $this->setSpeed($newSpeed);
             $this->setWebsite($newWebsite);
             $this->setZip($newZip);
+
         } catch (InvalidArgumentException $invalidArgument) {
             //rethrow the exception to the caller
             throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
@@ -77,7 +78,7 @@ class Business implements JsonSerializable
         }
         $this->businessId = $newBusinessId;
     }
-    
+
     public function getAddress()
     {
         return ($this->address);
@@ -132,7 +133,7 @@ class Business implements JsonSerializable
 
     public function setImages($images)
     {
-            $images = filter_var($images, FILTER_SANITIZE_STRING);
+        $images = filter_var($images, FILTER_SANITIZE_STRING);
         $this->images = $images;
     }
 
@@ -154,7 +155,8 @@ class Business implements JsonSerializable
     public function setName($newName)
     {
         // verify first name is valid
-        $newName = filter_var($newName, FILTER_SANITIZE_STRING);
+        $newName = filter_var($newName, FILTER_SANITIZE_STRING,
+          FILTER_FLAG_NO_ENCODE_QUOTES);
         if (empty($newName) === true) {
             throw new InvalidArgumentException("name invalid");
         }
@@ -242,7 +244,7 @@ class Business implements JsonSerializable
         if($newWebsite === false) {
             throw(new InvalidArgumentException("new website is invalid"));
         }
-        
+
         if (strlen($newWebsite) > 128) {
             throw (new RangeException ("Website is too long."));
         }
@@ -261,12 +263,13 @@ class Business implements JsonSerializable
         return ($this->zip);
     }
     /*
-     * 
+     *
      * param int $newZip
      * @throws RangeException when $newZip is not 5
      */
     public function setZip($newZip)
     {
+        $newZip = intval($newZip);
         $newZip = filter_var($newZip, FILTER_VALIDATE_INT);
 
         if ($newZip === false){
@@ -279,9 +282,9 @@ class Business implements JsonSerializable
 
         $this->zip = $newZip;
     }
-    
 
-    
+
+
     public function JsonSerialize()
     {
         $fields = get_object_vars($this);
@@ -307,7 +310,16 @@ class Business implements JsonSerializable
               VALUES (:address, :email, :images, :name, :phone, :speed, :website, :zip)";
         $statement = $pdo->prepare($query);
         // bind the variables to the place holders in the template
-        $parameters = array("address" => $this->address, "email" => $this->email, "images" => $this->images, "name"=> $this->name, "phone"=> $this->phone, "speed"=> $this->speed, "website"=> $this->website, "zip"=> $this->zip);
+        $parameters = array(
+          "address" => $this->address,
+          "email" => $this->email,
+          "images" => $this->images,
+          "name"=> $this->name,
+          "phone"=> $this->phone,
+          "speed"=> $this->speed,
+          "website"=> $this->website,
+          "zip"=> $this->zip
+        );
         $statement->execute($parameters);
 
         $this->businessId = intval($pdo->lastInsertId());
@@ -318,14 +330,26 @@ class Business implements JsonSerializable
      */
     public function update(PDO $pdo)
     {
-        
-            $query = "UPDATE business SET address = :address, email = :email, images = :images, name = :name, phone = :phone, speed = :speed, website = :website, zip = :zip
-                      WHERE businessId = :businessId";
-            $statement = $pdo->prepare($query);
 
-            $parameters = array ("address" => $this->address, "email" => $this->email, "images" => $this->images, "name"=> $this->name, "phone"=> $this->phone,
-                                    "speed"=> $this->speed, "website"=> $this->website, "zip"=> $this->zip, "businessId" => $this->businessId);
-            $statement->execute($parameters);
+          $query = "UPDATE business SET address = :address, email = :email,
+              images = :images, name = :name, phone = :phone, speed = :speed,
+              website = :website, zip = :zip
+              WHERE businessId = :businessId";
+          $statement = $pdo->prepare($query);
+
+          $parameters = array (
+              "address" => $this->address,
+              "email" => $this->email,
+              "images" => $this->images,
+              "name"=> $this->name,
+              "phone"=> $this->phone,
+              "speed"=> $this->speed,
+              "website"=> $this->website,
+              "zip"=> $this->zip,
+              "businessId" => $this->businessId
+          );
+
+          $statement->execute($parameters);
     }
 
 
@@ -365,7 +389,17 @@ class Business implements JsonSerializable
         while($row = $statement->fetch()) {
             try {
                 if ($row !== false) {
-                    $business = new Business ($row["businessId"], $row["address"], $row["email"], $row["images"], $row["name"], $row["phone"], $row["speed"], $row["website"], $row["zip"]);
+                    $business = new Business (
+                      $row["businessId"],
+                      $row["name"],
+                      $row["address"],
+                      $row["zip"],
+                      $row["phone"],
+                      $row["email"],
+                      $row["website"],
+                      $row["speed"],
+                      $row["images"]
+                    );
                     $businesses[$businesses->key()] = $business;
                     $businesses->next();
                 }
@@ -389,9 +423,10 @@ class Business implements JsonSerializable
         if ($businessId === false) {
             throw(new PDOException(""));
         }
+
         // create query template
         $query = "SELECT businessId, address, email, images, name, phone, speed, website, zip
-        FROM business WHERE businessId = :businessId";
+          FROM business WHERE businessId = :businessId";
         $statement = $pdo->prepare($query);
         // bind the bulletinid to the place holder in the template
         $parameters = array("businessId" => $businessId);
@@ -399,12 +434,24 @@ class Business implements JsonSerializable
         $business = null;
         // grab the bulletin from mySQL
         try {
-            
+
             $statement->setFetchMode(PDO::FETCH_ASSOC);
             $row = $statement->fetch();
+
             if ($row !== false) {
-                $business = new Business ($row["businessId"],  $row["address"], $row["email"], $row["images"], $row["name"],$row["phone"], $row["speed"], $row["website"], $row["zip"]);
+              $business = new Business (
+                $row["businessId"],
+                $row["name"],
+                $row["address"],
+                $row["zip"],
+                $row["phone"],
+                $row["email"],
+                $row["website"],
+                $row["speed"],
+                $row["images"]
+              );
             }
+
         } catch (Exception $exception) {
             // if the row couldn't be converted, rethrow it
             throw(new PDOException($exception->getMessage(), 0, $exception));
@@ -412,6 +459,3 @@ class Business implements JsonSerializable
         return ($business);
     }
 }
-
-
-

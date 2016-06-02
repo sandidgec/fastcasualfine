@@ -12,14 +12,82 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 </head>
 
-<body>
+<style>
+
+  html, body {
+    height: 100%;
+  }
+
+  .tweet-carousel {
+    height: 25%;
+  }
+
+  .tweet-carousel .right {
+    padding-left: 0;
+  }
+
+  .tweet-carousel .carousel-indicators li {
+    background-color: #FF0000;
+  }
+
+  .tweet-carousel .carousel-control {
+    background-image: none;
+    color: #FF0000;
+  }
+</style>
+
+<body ng-app="fastcasualfine">
 
     <?php require_once("lib/navbar.php")?>
 
-    <a class="twitter-timeline" href="https://twitter.com/TwitterDev" data-widget-id="738450180593188864">Tweets by @TwitterDev</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))
-        {js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
-        (document,"script","twitter-wjs");</script>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4">
+        </div>
+
+        <div class="col-md-8">
+
+          <h2>FastCasualFine @ Twitter</h2>
+          <p class="lead">Mention us on Twitter, show up on our homepage!</p>
+
+          <div id="tweetCarousel" class="carousel tweet-carousel slide"
+            data-ride="carousel" ng-controller="TweetCtrl" ng-init="getTweets()">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+
+              <li data-target="#tweetCarousel" data-slide-to="{{ $index }}"
+                ng-repeat="tweet in tweets" ng-class="{active: $index === 0}"></li>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item" ng-repeat="tweet in tweets" ng-class="{active: $index === 0}">
+                <h3 class="text-center">{{ tweet.text }}</h3>
+              </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#tweetCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#tweetCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <hr/>
 
     <div class="container">
         <div class="col-md-12">
@@ -280,10 +348,12 @@
         </div>
     </div>
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js"></script>
     <script src="lib/js/carousel.js"></script>
+    <script src="/lib/js/tweetwall.js"></script>
 
 </body>
 

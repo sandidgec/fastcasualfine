@@ -1,7 +1,7 @@
 <?php
-//require_once(dirname(dirname(__DIR__)) . "/classes/autoload.php");
-//require_once(dirname(dirname(__DIR__)) . "/lib/xsrf.php");
-//require_once("/etc/apache2/data-design/encrypted-config.php");
+require_once(dirname(dirname(__DIR__)) . "/autoload.php");
+require_once(dirname(dirname(__DIR__)) . "/dbconnect.php");
+require_once(dirname(dirname(__DIR__)) . "/business.php");
 // start the session and create a XSRF token
 if(session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
@@ -11,57 +11,83 @@ $reply = new stdClass();
 $reply->status = 200;
 $reply->data = null;
 try {
+
     // determine which HTTP method was used
     $method = array_key_exists("HTTP_X_HTTP_METHOD", $_SERVER) ? $_SERVER["HTTP_X_HTTP_METHOD"] : $_SERVER["REQUEST_METHOD"];
     // sanitize the userId
     $businessId = filter_input(INPUT_GET, "BusinessId", FILTER_VALIDATE_INT);
-    // grab the mySQL connection
-    //$pdo = connectToEncryptedMySql("/etc/apache2/capstone-mysql/invtext.ini");
-    // handle all RESTful calls to User today
-    // get some or all Users
+
+    // Grab the mySQL connection
+    // NOTE: This one is only used for Nginx servers
+    $pdo = establishConn("/usr/share/nginx/fcf_db.ini");
+    // NOTE: This is the one you use for Apache web servers.
+    //$pdo = establishConn("/etc/apache2/capstone-mysql/invtext.ini");
+
     if($method === "GET") {
+
         // set an XSRF cookie on GET requests
-        setXsrfCookie("/");
+        //setXsrfCookie("/");
         if(empty($businessId) === false) {
-            $reply->data = Business::getBusinessByBusinessId($pdo, $userId);
+            $reply->data = Business::getBusinessByBusinessId($pdo, $businessId);
         } else {
             $reply->data = Business::getAllBusiness($pdo);
         }
-        // post to a new User
+
     } else if($method === "POST") {
+
         // convert POSTed JSON to an object
-        verifyXsrf();
+        //verifyXsrf();
+
         $requestContent = file_get_contents("php://input");
         $requestObject = json_decode($requestContent);
 
-        // handle optional fields
-        $attention = (empty($requestObject->attention) === true ? null : $requestObject->attention);
-        $addressLineTwo = (empty($requestObject->addressLineTwo) === true ? null : $requestObject->addressLineTwo);
+        $business = new Business(
+            $businessId,
+            $requestObject->name,
+            $requestObject->address,
+            $requestObject->zip,
+            $requestObject->phone,
+            $requestObject->email,
+            $requestObject->website,
+            $requestObject->speed,
+            "" // Leaving Images Blank for now
+        );
 
-        
-        $business = new Business($busienssId, $requestObject->email, $requestObject->name,
-            $requestObject->phone, $requestObject->website, $requestObject->address,
-            $requestObject->zip );
         $business->insert($pdo);
         $_SESSION["business"] = $business;
         $reply->data = "Business created OK";
         // delete an existing User
+
     } else if($method === "DELETE") {
-        verifyXsrf();
+
+        //verifyXsrf();
         $business = Business::getBusinessByBusinessId($pdo, $businessId);
         $business->delete($pdo);
         $reply->data = "Business deleted OK";
+
         // put to an existing User
     } else if($method === "PUT") {
+
         // convert PUTed JSON to an object
-        verifyXsrf();
+        //verifyXsrf();
         $requestContent = file_get_contents("php://input");
         $requestObject = json_decode($requestContent);
-        $business = new Business($busienssId, $requestObject->email, $requestObject->name,
-            $requestObject->phone, $requestObject->website, $requestObject->address,
-            $requestObject->zip );
+
+        $business = new Business(
+            $businessId,
+            $requestObject->name,
+            $requestObject->address,
+            $requestObject->zip,
+            $requestObject->phone,
+            $requestObject->email,
+            $requestObject->website,
+            $requestObject->speed,
+            "" // Leaving Images Blank for now
+        );
+
         $business->update($pdo);
         $reply->data = "Business updated OK";
+
     }
     // create an exception to pass back to the RESTful caller
 } catch(Exception $exception) {
