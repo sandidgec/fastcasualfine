@@ -1,7 +1,20 @@
 .businessAdminTable{
-    border: #030303;
-    padding: 10px;
+    border-collapse: collapse;
+
 }
-tr{
-    border: #030303;
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+.form-group{
+    text-align: center;
+}
+#table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    text-align: center;
 }
