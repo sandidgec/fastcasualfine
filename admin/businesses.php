@@ -16,7 +16,7 @@
   <body ng-app="FCFBusiness">
 
     <!-- Modal for Adding / Editing Businesses -->
-    <div class="modal fade" tabindex="-1" role="dialog" id="newBusinessModal"
+    <div class="modal fade" tabindex="-1" role="dialog" id="businessFormModal"
       ng-controller="BusinessFormCtrl">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -28,7 +28,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
 
-            <h4 class="modal-title">Add New Business</h4>
+            <h4 class="modal-title">{{ action }}</h4>
           </div>
 
           <form ng-submit="sendBusiness()">
@@ -129,7 +129,9 @@
       <div class="page-header">
         <h1>Business Admin</h1>
         <p class="lead">
-          <a href="#newBusinessModal" data-toggle="modal">Add New Business</a>
+          <a href="#businessFormModal" data-toggle="modal">
+            <i class="fa fa-plus"></i> Add New Business
+          </a>
         </p>
       </div>
 
@@ -188,7 +190,7 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js"></script>
-    <script src="/lib/js/admin-missions.js"></script>
+    <script src="/lib/js/admin-business.js"></script>
 
   <body>
 </html>

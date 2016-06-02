@@ -65,18 +65,30 @@ try {
         $business = Business::getBusinessByBusinessId($pdo, $businessId);
         $business->delete($pdo);
         $reply->data = "Business deleted OK";
-        
+
         // put to an existing User
     } else if($method === "PUT") {
+
         // convert PUTed JSON to an object
-        verifyXsrf();
+        //verifyXsrf();
         $requestContent = file_get_contents("php://input");
         $requestObject = json_decode($requestContent);
-        $business = new Business($busienssId, $requestObject->email, $requestObject->name,
-            $requestObject->phone, $requestObject->website, $requestObject->address,
-            $requestObject->zip );
+
+        $business = new Business(
+          $businessId,
+          $requestObject->name,
+          $requestObject->address,
+          $requestObject->zip,
+          $requestObject->phone,
+          $requestObject->email,
+          $requestObject->website,
+          $requestObject->speed,
+          "" // Leaving Images Blank for now
+        );
+        
         $business->update($pdo);
         $reply->data = "Business updated OK";
+
     }
     // create an exception to pass back to the RESTful caller
 } catch(Exception $exception) {

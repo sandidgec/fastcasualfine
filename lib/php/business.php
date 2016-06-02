@@ -155,7 +155,8 @@ class Business implements JsonSerializable
     public function setName($newName)
     {
         // verify first name is valid
-        $newName = filter_var($newName, FILTER_SANITIZE_STRING);
+        $newName = filter_var($newName, FILTER_SANITIZE_STRING,
+          FILTER_FLAG_NO_ENCODE_QUOTES);
         if (empty($newName) === true) {
             throw new InvalidArgumentException("name invalid");
         }
@@ -268,7 +269,8 @@ class Business implements JsonSerializable
      */
     public function setZip($newZip)
     {
-        $isZip = filter_var($newZip, FILTER_VALIDATE_INT);
+        $newZip = intval($newZip);
+        $newZip = filter_var($newZip, FILTER_VALIDATE_INT);
 
         if ($newZip === false){
             throw (new InvalidArgumentException("Zip must ba an inteter"));
@@ -329,13 +331,25 @@ class Business implements JsonSerializable
     public function update(PDO $pdo)
     {
 
-            $query = "UPDATE business SET address = :address, email = :email, images = :images, name = :name, phone = :phone, speed = :speed, website = :website, zip = :zip
-                      WHERE businessId = :businessId";
-            $statement = $pdo->prepare($query);
+          $query = "UPDATE business SET address = :address, email = :email,
+              images = :images, name = :name, phone = :phone, speed = :speed,
+              website = :website, zip = :zip
+              WHERE businessId = :businessId";
+          $statement = $pdo->prepare($query);
 
-            $parameters = array ("address" => $this->address, "email" => $this->email, "images" => $this->images, "name"=> $this->name, "phone"=> $this->phone,
-                                    "speed"=> $this->speed, "website"=> $this->website, "zip"=> $this->zip, "businessId" => $this->businessId);
-            $statement->execute($parameters);
+          $parameters = array (
+              "address" => $this->address,
+              "email" => $this->email,
+              "images" => $this->images,
+              "name"=> $this->name,
+              "phone"=> $this->phone,
+              "speed"=> $this->speed,
+              "website"=> $this->website,
+              "zip"=> $this->zip,
+              "businessId" => $this->businessId
+          );
+
+          $statement->execute($parameters);
     }
 
 
