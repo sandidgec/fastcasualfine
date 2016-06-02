@@ -572,7 +572,14 @@
         </div><!--row-->
 
     <br><br><br><be><br>
-                <h2>Casual</h2>
+
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>Casual Food</h1>
+                </div>
+            </div>
+
+            <br><br><br>
 
             <div class="row">
                     <div class="col-md-4 text-center">
@@ -593,7 +600,7 @@
                         <p>4601 E. Main   Farmington, N.M.</p>
                     </div>
 
-                </div><!--row-->
+            </div><!--row-->
 
                 <br><br><br>
 
@@ -1335,19 +1342,19 @@
 
                 <div class="row">
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagesfine/.jpg">
+                        <img class="circleimage" src="lib/images/imagesfine/kbdillon.jpg">
                         <h2>K B Dillon's</h2>
                         <p>101 W. Broadway   Farmington, N.M.</p>
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagesfine/.jpg">
+                        <img class="circleimage" src="lib/images/imagesfine/redlobster.png">
                         <h2>Red Lobster Restaurant</h2>
                         <p>3451 E. Main   Farmington,N.M.</p>
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagesfine/.jpg">
+                        <img class="circleimage" src="lib/images/imagesfine/stclair.jpg">
                         <h2>St Clair Winery & Bistro</h2>
                         <p>5150 E. Main   Farmington, N.M.</p>
                     </div>
@@ -1358,13 +1365,13 @@
 
                 <div class="row">
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagesfine/.jpg">
+                        <img class="circleimage" src="lib/images/imagesfine/texasroad.jpg">
                         <h2>Texas Roadhouse</h2>
                         <p>4601 E. Main   Farmington, N.M.</p>
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="circleimage" src="lib/imagesfine/.jpg">
+                        <img class="circleimage" src="lib/images/imagesfine/tomo.jpg">
                         <h2>Tomo Steakhouse</h2>
                         <p>3500 E. Main   Farmington,N.M.</p>
                     </div>
