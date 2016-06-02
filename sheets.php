@@ -14,13 +14,11 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1 class="text-center"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-                Fast Food       <span class="glyphicon glyphicon-road" aria-hidden="true"></span></h1>
+            <h1 class="text-center"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+                Fast Food       <span class="glyphicon glyphicon-glass" aria-hidden="true"></span></h1>
         </div>
     </div>
-
-
-
+    
     <div class="container">
 
         <div class="row">
