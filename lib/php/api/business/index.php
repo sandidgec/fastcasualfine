@@ -19,7 +19,7 @@ try {
 
     // Grab the mySQL connection
     // NOTE: This one is only used for Nginx servers
-    $pdo = establishConn("/usr/share/nginx/fcf_db.ini");
+    $pdo = establishConn("../../../../fastcasualfine.ini");
     // NOTE: This is the one you use for Apache web servers.
     //$pdo = establishConn("/etc/apache2/capstone-mysql/invtext.ini");
 

@@ -36,8 +36,8 @@ p {
 }
 
 .circleimage {
-    width:120px;
-    height:120px;
+    width:80px;
+    height:80px;
     border-radius:50%;
     border:3px solid#060606;
 
@@ -62,9 +62,17 @@ p {
     color:red;
 }
 
-body{
-    background-color: #E0F4FF;
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: rgba(0, 0, 0, 0.8);
 }
-.container{
-    padding-bottom: 50px;
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);  /*Change active background color here*/
+}
+
+.navbar-default {
+    background: transparent;
 }
