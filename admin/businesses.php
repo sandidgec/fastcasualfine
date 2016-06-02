@@ -8,9 +8,14 @@
       integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
       crossorigin="anonymous">
 
+    <link type="text/css"
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
   </head>
   <body ng-app="FCFBusiness">
 
+    <!-- Modal for Adding / Editing Businesses -->
     <div class="modal fade" tabindex="-1" role="dialog" id="newBusinessModal"
       ng-controller="BusinessFormCtrl">
       <div class="modal-dialog">
@@ -84,6 +89,35 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <!-- Modal for Deleting Businesses -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="newBusinessModal"
+      ng-controller="DeleteBizCtrl">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h4 class="modal-title">Delete Business</h4>
+          </div>
+
+          <div class="modal-body">
+
+            <p>Are you sure you want to delete
+              <span>{{ business.name }}</span>?</p>
+          </div>
+
+          <div class="modal-footer">
+          </div>
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <div class="container">
 
       <div class="page-header">
@@ -106,6 +140,7 @@
             <th>Email</th>
             <th>Website</th>
             <th>Speed</th>
+            <th>Edit</th>
           </tr>
         </thead>
         <tbody>
@@ -118,6 +153,17 @@
             <td>{{ business.email }}</td>
             <td>{{ business.website}}</td>
             <td>{{ business.speed }}</td>
+            <td>
+
+              <a href="#" ng-click="editBusiness(business)">
+                <i class="fa fa-pencil"></i>
+              </a>
+
+              <a href="#" ng-click="deleteBusiness()">
+                <i class="fa fa-times"></i>
+              </a>
+
+            </td>
           </tr>
         </tbody>
       </table>
