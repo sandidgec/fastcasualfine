@@ -9,13 +9,15 @@
 <body>
 
 <?php require_once("lib/navbar.php");?>
+
 <div class="jumbotron">
     <div class="container">
         <h1>About</h1>
     </div>
 </div>
+
 <div class="container">
-    <h1> 4 Corners Food.com is a indispenable tool for the locals or an out of town visitor</h1>
+    <h1> FastCasualFine.com is a indispenable tool for the locals or an out of town visitor</h1>
     <h1> in the Farmington area in search of a place to dine and want a rating system of the</h1>
     <h1>restaurants along with location and contact information. It's an immensely valuable</h1>
     <h1>marketing and advertising medium for the restaurant owner.</h1>
