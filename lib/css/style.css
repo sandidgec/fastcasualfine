@@ -66,4 +66,18 @@ body{
     padding-top: 70px;
 }
 
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);  /*Change active background color here*/
+}
+
+.navbar-default {
+    background: transparent;
+}
 
