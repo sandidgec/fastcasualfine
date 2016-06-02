@@ -16,6 +16,11 @@
 
     <?php require_once("lib/navbar.php")?>
 
+    <a class="twitter-timeline" href="https://twitter.com/TwitterDev" data-widget-id="738450180593188864">Tweets by @TwitterDev</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))
+        {js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}
+        (document,"script","twitter-wjs");</script>
+
     <div class="container">
         <div class="col-md-12">
             <div class="vertical-text"><h1>fast</h1></div>
@@ -164,6 +169,9 @@
                 </div>
             </div>
         </div>
+
+
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="lib/js/carousel.js"></script>
