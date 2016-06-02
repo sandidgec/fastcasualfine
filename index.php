@@ -171,6 +171,115 @@
         </div>
 
 
+    <div class="container">
+        <div class="col-md-12">
+            <div class="vertical-text"><h1>fast</h1></div>
+            <div class="well">
+                <div id="myCarousel" class="carousel slide">
+
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-2"><a href=""><img src="/lib/imagesfast/505.jpg" alt="Image" class="img-responsive"></a>
+                                    <p>Chester's Chicken</p>
+                                    <p>3125 Bloomfield Hwy   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href=""><img src="/lib/imagesfast/arbys.jpg" alt="Image" class="img-responsive"></a>
+                                    <h2>Arby's</h2>
+                                    <p>1825 E. Main   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/blakes.png" alt="Image" class="img-responsive"></a>
+                                    <h2>Blakes Lotaburger</h2>
+                                    <p>1611 W. Main   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/burgerking.jpg" alt="Image" class="img-responsive"></a>
+                                    <h2>Blakes Lotaburger</h2>
+                                    <p>1611 W. Main   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/churchs.png" alt="Image" class="img-responsive"></a>
+                                    <h2>Churchs Chicken</h2>
+                                    <p>2711 E. 20th st.   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/corndogsplus.jpg" alt="Image" class="img-responsive"></a>
+                                    <h2>Corn Dogs Plus</h2>
+                                    <p>3000 E. 20th st.   Farmington , N.M.</p>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/dominos1.png" alt="Image" class="img-responsive"></a>
+                                    <h2>Domino's Pizza</h2>
+                                    <p>3000 E. 20th st.   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/dq.jpg" alt="Image" class="img-responsive"></a>
+                                    <h2>Dairy Queen</h2>
+                                    <p>721 E. Main   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/dunkind.png" alt="Image" class="img-responsive"></a>
+                                    <h2>Dunkin' Donuts</h2>
+                                    <p>3030 E. Main   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/famouswok.jpg" alt="Image" class="img-responsive"></a>
+                                    <h2>Famous Wok</h2>
+                                    <p>Animas Valley Mall   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/fatboy.jpg" alt="Image" class="img-responsive"></a>
+                                    <h2>Fat Boys Deli</h2>
+                                    <p>1301 20th st.   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/freddys.png" alt="Image" class="img-responsive"></a>
+                                    <p>Chester's Chicken</p>
+                                    <p>3125 Bloomfield Hwy   Farmington, N.M.</p>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/hometown.jpg" alt="Image" class="img-responsive"></a>
+                                    <p>Chester's Chicken</p>
+                                    <p>3125 Bloomfield Hwy   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/jimmyjohn.png" alt="Image" class="img-responsive"></a>
+                                    <p>Chester's Chicken</p>
+                                    <p>3125 Bloomfield Hwy   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/kfc1.jpg" alt="Image" class="img-responsive"></a>
+                                    <p>Chester's Chicken</p>
+                                    <p>3125 Bloomfield Hwy   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/mcd1.png" alt="Image" class="img-responsive"></a>
+                                    <p>Chester's Chicken</p>
+                                    <p>3125 Bloomfield Hwy   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/p9.png" alt="Image" class="img-responsive"></a>
+                                    <p>Chester's Chicken</p>
+                                    <p>3125 Bloomfield Hwy   Farmington, N.M.</p>
+                                </div>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/papam.png" alt="Image" class="img-responsive"></a>
+                                    <p>Chester's Chicken</p>
+                                    <p>3125 Bloomfield Hwy   Farmington, N.M.</p>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                    </div>
+                    <!--/carousel-inner--> <a class="left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+
+                    <a class="right" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                </div>
+                <!--/myCarousel-->
+            </div>
+            <!--/well-->
+        </div>
+    </div>
+
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
