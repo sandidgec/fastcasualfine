@@ -375,7 +375,17 @@ class Business implements JsonSerializable
         while($row = $statement->fetch()) {
             try {
                 if ($row !== false) {
-                    $business = new Business ($row["businessId"], $row["address"], $row["email"], $row["images"], $row["name"], $row["phone"], $row["speed"], $row["website"], $row["zip"]);
+                    $business = new Business (
+                      $row["businessId"],
+                      $row["name"],
+                      $row["address"],
+                      $row["zip"],
+                      $row["phone"],
+                      $row["email"],
+                      $row["website"],
+                      $row["speed"],
+                      $row["images"]
+                    );
                     $businesses[$businesses->key()] = $business;
                     $businesses->next();
                 }

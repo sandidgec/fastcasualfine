@@ -93,6 +93,35 @@
         </p>
       </div>
 
+      <table class="table" ng-controller="BusinessTable"
+        ng-init="getBusinesses()">
+        <caption>Stored Businesses</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Zip</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Website</th>
+            <th>Speed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="business in businesses">
+            <td>{{ $index + 1}}</td>
+            <td>{{ business.name }}</td>
+            <td>{{ business.address}}</td>
+            <td>{{ business.zip }}</td>
+            <td>{{ business.phone }}</td>
+            <td>{{ business.email }}</td>
+            <td>{{ business.website}}</td>
+            <td>{{ business.speed }}</td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
