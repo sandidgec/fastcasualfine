@@ -35,7 +35,7 @@ class Business implements JsonSerializable
             $this->setSpeed($newSpeed);
             $this->setWebsite($newWebsite);
             $this->setZip($newZip);
-            
+
         } catch (InvalidArgumentException $invalidArgument) {
             //rethrow the exception to the caller
             throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
@@ -133,7 +133,7 @@ class Business implements JsonSerializable
 
     public function setImages($images)
     {
-            $images = filter_var($images, FILTER_SANITIZE_STRING);
+        $images = filter_var($images, FILTER_SANITIZE_STRING);
         $this->images = $images;
     }
 
