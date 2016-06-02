@@ -409,9 +409,10 @@ class Business implements JsonSerializable
         if ($businessId === false) {
             throw(new PDOException(""));
         }
+
         // create query template
         $query = "SELECT businessId, address, email, images, name, phone, speed, website, zip
-        FROM business WHERE businessId = :businessId";
+          FROM business WHERE businessId = :businessId";
         $statement = $pdo->prepare($query);
         // bind the bulletinid to the place holder in the template
         $parameters = array("businessId" => $businessId);
@@ -422,9 +423,21 @@ class Business implements JsonSerializable
 
             $statement->setFetchMode(PDO::FETCH_ASSOC);
             $row = $statement->fetch();
+
             if ($row !== false) {
-                $business = new Business ($row["businessId"],  $row["address"], $row["email"], $row["images"], $row["name"],$row["phone"], $row["speed"], $row["website"], $row["zip"]);
+              $business = new Business (
+                $row["businessId"],
+                $row["name"],
+                $row["address"],
+                $row["zip"],
+                $row["phone"],
+                $row["email"],
+                $row["website"],
+                $row["speed"],
+                $row["images"]
+              );
             }
+
         } catch (Exception $exception) {
             // if the row couldn't be converted, rethrow it
             throw(new PDOException($exception->getMessage(), 0, $exception));

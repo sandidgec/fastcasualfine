@@ -90,7 +90,7 @@
     </div><!-- /.modal -->
 
     <!-- Modal for Deleting Businesses -->
-    <div class="modal fade" tabindex="-1" role="dialog" id="newBusinessModal"
+    <div class="modal fade" tabindex="-1" role="dialog" id="deleteBusinessModal"
       ng-controller="DeleteBizCtrl">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -107,11 +107,17 @@
 
           <div class="modal-body">
 
-            <p>Are you sure you want to delete
-              <span>{{ business.name }}</span>?</p>
+            <p class="text-center">Are you sure you want to delete
+              <strong>{{ business.name }}</strong>?</p>
           </div>
 
           <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-danger" ng-click="delete()">
+              Delete
+            </button>
           </div>
 
         </div><!-- /.modal-content -->
@@ -129,7 +135,9 @@
 
       <table class="table" ng-controller="BusinessTable"
         ng-init="getBusinesses()">
+
         <caption>Stored Businesses</caption>
+
         <thead>
           <tr>
             <th>#</th>
@@ -143,9 +151,10 @@
             <th>Edit</th>
           </tr>
         </thead>
+
         <tbody>
           <tr ng-repeat="business in businesses">
-            <td>{{ $index + 1}}</td>
+            <td>{{ business.businessId }}</td>
             <td>{{ business.name }}</td>
             <td>{{ business.address}}</td>
             <td>{{ business.zip }}</td>
@@ -159,13 +168,14 @@
                 <i class="fa fa-pencil"></i>
               </a>
 
-              <a href="#" ng-click="deleteBusiness()">
+              <a href="#" ng-click="deleteBusiness(business)">
                 <i class="fa fa-times"></i>
               </a>
 
             </td>
           </tr>
         </tbody>
+
       </table>
 
     </div>

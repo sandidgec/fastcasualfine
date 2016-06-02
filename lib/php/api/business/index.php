@@ -60,10 +60,12 @@ try {
         // delete an existing User
 
     } else if($method === "DELETE") {
-        verifyXsrf();
+
+        //verifyXsrf();
         $business = Business::getBusinessByBusinessId($pdo, $businessId);
         $business->delete($pdo);
         $reply->data = "Business deleted OK";
+        
         // put to an existing User
     } else if($method === "PUT") {
         // convert PUTed JSON to an object
