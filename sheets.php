@@ -14,9 +14,12 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1>Fast Food</h1>
+            <h1 class="text-center"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                Fast Food       <span class="glyphicon glyphicon-road" aria-hidden="true"></span></h1>
         </div>
     </div>
+
+
 
     <div class="container">
 
@@ -161,7 +164,7 @@
             </div>
 
             <div class="col-md-3 text-center">
-                <img class="circle" src="lib/imagesfast/dq.jpg">
+                <img class="circleimage" src="lib/imagesfast/dq.jpg">
                 <h2>Dairy Queen</h2>
                 <p>506 N.E.   Aztec, N.M.</p>
             </div>
@@ -758,9 +761,9 @@
                         <p>1794 Hwy 173   Navajo Dam, N.M.</p>
                     </div>
 
-                <div id="footer">
-                    Copyright 2016 Cultivating Coders media
-                </div>
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
 
                 </div><!--row-->
 
