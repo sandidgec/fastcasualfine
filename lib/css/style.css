@@ -2,7 +2,8 @@
     color:#ccc;
     background-color:#000066;
     height:150px;
-    margin-top:20px;
+    margin-top:15px;
+    margin-bottom:15px;
 }
 
 .jumbotron.biz {
@@ -35,8 +36,8 @@ p {
 }
 
 .circleimage {
-    width:160px;
-    height:160px;
+    width:140px;
+    height:140px;
     border-radius:50%;
     border:3px solid#060606;
 
