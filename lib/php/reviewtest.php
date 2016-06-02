@@ -1,5 +1,5 @@
 <?php
-require_once ("../../fastcasualfine.php");
+require_once("../../fastcasualfine.ini");
 require_once("autoload.php");
 
 

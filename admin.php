@@ -25,7 +25,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-folder-open" aria-hidden="true"></i> Business Admin<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="businessAdmin.php">Business</a></li>
+                        <li><a href="admin/businesses.php">Business</a></li>
                         <li><a href=""></a></li>
                         <!--  <li><a href="">groups</a></li>
                           <li><a href="">projects</a></li>
