@@ -28,11 +28,10 @@ try {
         // set an XSRF cookie on GET requests
         //setXsrfCookie("/");
         if(empty($businessId) === false) {
-            $reply->data = Business::getBusinessByBusinessId($pdo, $userId);
+            $reply->data = Business::getBusinessByBusinessId($pdo, $businessId);
         } else {
             $reply->data = Business::getAllBusiness($pdo);
         }
-        // post to a new User
 
     } else if($method === "POST") {
 
@@ -43,15 +42,15 @@ try {
         $requestObject = json_decode($requestContent);
 
         $business = new Business(
-          $businessId,
-          $requestObject->name,
-          $requestObject->address,
-          $requestObject->zip,
-          $requestObject->phone,
-          $requestObject->email,
-          $requestObject->website,
-          $requestObject->speed,
-          "" // Leaving Images Blank for now
+            $businessId,
+            $requestObject->name,
+            $requestObject->address,
+            $requestObject->zip,
+            $requestObject->phone,
+            $requestObject->email,
+            $requestObject->website,
+            $requestObject->speed,
+            "" // Leaving Images Blank for now
         );
 
         $business->insert($pdo);
@@ -75,17 +74,17 @@ try {
         $requestObject = json_decode($requestContent);
 
         $business = new Business(
-          $businessId,
-          $requestObject->name,
-          $requestObject->address,
-          $requestObject->zip,
-          $requestObject->phone,
-          $requestObject->email,
-          $requestObject->website,
-          $requestObject->speed,
-          "" // Leaving Images Blank for now
+            $businessId,
+            $requestObject->name,
+            $requestObject->address,
+            $requestObject->zip,
+            $requestObject->phone,
+            $requestObject->email,
+            $requestObject->website,
+            $requestObject->speed,
+            "" // Leaving Images Blank for now
         );
-        
+
         $business->update($pdo);
         $reply->data = "Business updated OK";
 
