@@ -1220,7 +1220,7 @@
                         <p>525 E. Broadway   Farmington,N.M.</p>
                     </div>
 
-                    div class="col-md-3 text-center">
+                    <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/wonderfulhouse.jpg">
                         <h2>Wonderful House Chinese Restaurant</h2>
                         <p>115 W. Aztec   Aztec, N.M.</p>
