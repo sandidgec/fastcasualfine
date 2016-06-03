@@ -60,14 +60,14 @@
             <ol class="carousel-indicators">
 
               <li data-target="#tweetCarousel" data-slide-to="{{ $index }}"
-                ng-repeat="tweet in tweets" ng-class="{active: $index === 0}"></li>
+                ng-repeat="tweet in tweets track by $index" ng-class="{active: $index === 0}"></li>
 
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
 
-              <div class="item" ng-repeat="tweet in tweets" ng-class="{active: $index === 0}">
+              <div class="item" ng-repeat="tweet in tweets track by $index" ng-class="{active: $index === 0}">
                 <h3 class="text-center">{{ tweet.text }}</h3>
               </div>
 
@@ -94,7 +94,7 @@
     <div class="container">
         <div class="col-md-12">
             <div class="vertical-text"><h1>Fast</h1></div>
-            <div class="well">
+            <div class="well well-background">
                 <div id="myCarousel" class="carousel slide">
 
                     <!-- Carousel items -->
@@ -122,7 +122,7 @@
                                     <p>2711 E. 20th st.   Farmington, N.M.</p>
                                 </div>
                                 <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/corndogsplus.jpg" alt="Image" class="img-responsive"></a>
-                                    <h2>Corn Dogs Plus</h2>
+                                    <p>Corn Dogs Plus</p>
                                     <p>3000 E. 20th st.   Farmington , N.M.</p>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                                     <p>Hometown Hamburgers</p>
                                     <p>2133 E. Main   Farmington, N.M.</p>
                                 </div>
-                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/jimmyjohn.png" alt="Image" class="img-responsive"></a>                <h2>Jimmy John's Gourmet Sandwiches</h2>
+                                <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/jimmyjohn.png" alt="Image" class="img-responsive"></a>
                                     <p>Jimmy John's Gourmet Sandwiches</p>
                                     <p>3060 E. 20th. st. Suite #B   Farmington, N.M.</p>
                                 </div>
@@ -174,15 +174,15 @@
                                     <p>532 E. Main   Farmington, N.M.</p>
                                 </div>
                                 <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/mcd1.png" alt="Image" class="img-responsive"></a>
-                                    <h2>McDonald's</h2>
+                                    <p>McDonald's</p>
                                     <p>2215 E. Main   Farmington, N.M.</p>
                                 </div>
                                 <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/p9.png" alt="Image" class="img-responsive"></a>
-                                    <h2>Pizza 9</h2>
+                                    <p>Pizza 9</p>
                                     <p>685 S. Scott Ave.   Farmington, N.M.</p>
                                 </div>
                                 <div class="col-sm-2"><a href="#x"><img src="/lib/imagesfast/papam.png" alt="Image" class="img-responsive"></a>
-                                    <h2>Papa Murphy's Take 'N' Bake Pizza</h2>
+                                    <p>Papa Murphy's Take 'N' Bake Pizza</p>
                                     <p>3554 E. Main   Farmington, N.M.</p>
                                 </div>
                             </div>

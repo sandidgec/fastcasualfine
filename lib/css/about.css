@@ -2,9 +2,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    color: inherit;
     background-color: #000066;
     text-align: center;
     color: white;
+    margin-top: 60px;
 }
 
+body{
+    background-color: #E0F4FF;
+}
