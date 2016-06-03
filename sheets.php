@@ -273,19 +273,19 @@
     <br>
 
         <div class="row">
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/kfc1.jpg">
                 <h2>Kentucky Fried Chicken</h2>
                 <p>532 E. Main   Farmington, N.M.</p>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/kfc2.jpg">
                 <h2>Kentucky ried Chicken</h2>
                 <p>3801 E. Main   Farmington , N.M.</p>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/kfc1.jpg">
                 <h2>Kentucky Fried Chicken</h2>
                 <p>4198 Us Hwy 64   Kirtland, N.M.</p>
@@ -299,7 +299,7 @@
 
         </div><!--row-->
 
-    <br><br>
+    <br>
 
         <div class="row">
             <div class="col-md-3 text-center">
