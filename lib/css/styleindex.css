@@ -56,3 +56,30 @@ img{
 .col-md-12{
     background-color: transparent;
 }
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: rgba(0, 0, 0, 0.8);
+}
+.navbar-nav nav{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-nav > li > a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);  /*Change active background color here*/
+}
+.navbar-brand {
+    width: 50px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.dropdown{
+    padding-left: 20px;
+}
+a{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4) !important;
+}
+#FCF {
+    background-color: rgba(255, 228, 224, 0.5) !important;
+    background-image: none !important;
+}
