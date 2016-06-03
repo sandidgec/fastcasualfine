@@ -1301,8 +1301,4 @@
 
     </body>
 
-    <footer>
-        
-    </footer>
-
 </html>
