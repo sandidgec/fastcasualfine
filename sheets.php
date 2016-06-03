@@ -1061,7 +1061,7 @@
             <br>
 
                 <div class="row">
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/rubios.jpg">
                         <h2>Rubio's</h2>
                         <p>116 S. Main Ave.   Aztec, N.M.</p>
@@ -1123,7 +1123,7 @@
             <br>
 
                     <div class="row">
-                        div class="col-md-3 text-center">
+                        <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/sonyas.jpg">
                         <h2>Sonya's Cookin USA Restaurant</h2>
                         <p>510 S. Bloomfield   Bloomfield,N.M.</p>
