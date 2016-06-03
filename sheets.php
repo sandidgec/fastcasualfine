@@ -219,12 +219,13 @@
 
             <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/dunkind.png">
-t
+                <h2>Dunkin Donuts</h2>
+                <p>3030 E. Main   Farmington, N.M.</p>
             </div>
 
             <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/famouswok.jpg">
-                <h2>Famous Wok</h2>
+                <h2>Stir Fry 88</h2>
                 <p>Animas Valley Mall   Farmington, N.M.</p>
             </div>
 
@@ -234,13 +235,9 @@ t
                 <p>1301 20th st.   Farmington, N.M.</p>
             </div>
 
-            <div id="footer">
-                Copyright 2016 Cultivating Coders media
-            </div>
-
         </div><!--row-->
 
-    <br><br>
+    <br>
 
         <div class="row">
             <div class="col-md-3 text-center">
@@ -267,6 +264,10 @@ t
                 <p>3060 E. 20th. st. Suite #B   Farmington, N.M.</p>
             </div>
 
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
         </div><!--row-->
 
     <br>
@@ -290,8 +291,10 @@ t
                 <p>4198 Us Hwy 64   Kirtland, N.M.</p>
             </div>
 
-            <div id="footer">
-                Copyright 2016 Cultivating Coders media
+            <div class="col-md-3 text-center">
+                <img class="circleimage" src="lib/imagesfast/kfcblmfd.jpg">
+                <h2>Kentucky Fried Chicken</h2>
+                <p>506 S. Bloomfield Blvd.   Bloomfield, N.M.</p>
             </div>
 
         </div><!--row-->
@@ -299,12 +302,6 @@ t
     <br><br>
 
         <div class="row">
-            <div class="col-md-3 text-center">
-                <img class="circleimage" src="lib/imagesfast/kfcblmfd.jpg">
-                <h2>Kentucky Fried Chicken</h2>
-                <p>506 S. Bloomfield Blvd.   Bloomfield, N.M.</p>
-            </div>
-
             <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/mcd4.png">
                 <h2>McDonald's</h2>
@@ -323,17 +320,17 @@ t
                 <p>1608 W. Main   Farmington, N.M.</p>
             </div>
 
-        </div><!--row-->
-
-    <br>
-
-        <div class="row">
             <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/pjohns.jpg">
                 <h2>Papa John's</h2>
                 <p>3030 E. Main   Farmington, N.M.</p>
             </div>
 
+        </div><!--row-->
+
+    <br>
+
+        <div class="row">
             <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/papam.png">
                 <h2>Papa Murphy's Take 'N' Bake Pizza</h2>
@@ -352,17 +349,21 @@ t
                 <p>484 E. 20th. st.   Farmington, N.M.</p>
             </div>
 
+            <div class="col-md-3 text-center">
+                <img class="circleimage" src="lib/imagesfast/sonic1.png">
+                <h2>Sonic Drive In</h2>
+                <p>1522 W. Aztec, N.M.</p>
+            </div>
+
+        <div id="footer">
+            Copyright 2016 Cultivating Coders media
+        </div>
+
         </div><!--row-->
 
-    <br>
+        <br>
 
             <div class="row">
-                <div class="col-md-3 text-center">
-                    <img class="circleimage" src="lib/imagesfast/sonic1.png">
-                    <h2>Sonic Drive In</h2>
-                    <p>1522 W. Aztec, N.M.</p>
-                </div>
-
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/sonic2.jpg">
                     <h2>Sonic Drive In</h2>
@@ -381,21 +382,17 @@ t
                     <p>1720 W. Main   Farmington, N.M.</p>
                 </div>
 
-                <div id="footer">
-                    Copyright 2016 Cultivating Coders media
-                </div>
-
-            </div><!--row-->
-
-        <br><br>
-
-            <div class="row">
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/sonic5.jpg">
                     <h2>Sonic Drive In</h2>
                     <p>1610 E. 20th. st.   Farmington, N.M.</p>
                 </div>
 
+            </div><!--row-->
+
+        <br>
+
+            <div class="row">
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/sonic6.jpg">
                     <h2>Sonic Drive In</h2>
@@ -409,22 +406,22 @@ t
                 </div>
 
                 <div class="col-md-3 text-center">
-                <img class="circleimage" src="lib/imagesfast/subway1.jpg">
-                <h2>Subway Sandwiches</h2>
-                <p>101 N.E. Aztec Blvd.   Aztec, N.M.</p>
-            </div>
+                    <img class="circleimage" src="lib/imagesfast/subway1.jpg">
+                    <h2>Subway Sandwiches</h2>
+                    <p>101 N.E. Aztec Blvd.   Aztec, N.M.</p>
+                </div>
 
-            </div><!--row-->
-
-        <br>
-
-            <div class="row">
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/subway4.jpg">
                     <h2>Subway Sandwiches</h2>
                     <p>818 W. Broadway   Bloomfield, N.M.</p>
                 </div>
 
+            </div><!--row-->
+
+        <br>
+
+            <div class="row">
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/subway2.jpg">
                     <h2>Subway Sandwiches</h2>
@@ -443,21 +440,21 @@ t
                     <p>4226 Hwy 64 W.   Kirtland, N.M.</p>
                 </div>
 
-                <div id="footer">
-                    Copyright 2016 Cultivating Coders media
-                </div>
-
-            </div><!--row-->
-
-    <br><br>
-
-            <div class="row">
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/taco.jpg">
                     <h2>Taco Bell</h2>
                     <p>2100 W. Main   Farmington, N.M.</p>
                 </div>
 
+                <div id="footer">
+                    Copyright 2016 Cultivating Coders media
+                </div>
+
+            </div><!--row-->
+
+           <br>
+
+            <div class="row">
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/taco.jpg">
                     <h2>Taco Bell</h2>
@@ -476,17 +473,17 @@ t
                     <p>777 W. Broadway   Farmimgton,N.M.</p>
                 </div>
 
-            </div><!--row-->
-
-    <br>
-
-            <div class="row">
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/teriyakibeefbowl.jpg">
                     <h2>Teriyaki Chicken & Beef Bowl</h2>
                     <p>3501 E. Main Ste H-Middlefork Sq  Farmington, N.M.</p>
                 </div>
 
+            </div><!--row-->
+
+            <br>
+
+            <div class="row">
                 <div class="col-md-3 text-center">
                     <img class="circleimage" src="lib/imagesfast/teriyakichickencombo.jpg">
                     <h2>Teriyaki Chicken Combo</h2>
@@ -505,21 +502,17 @@ t
                     <p>400 W.Broadway   Bloomfield, N.M.</p>
                 </div>
 
-                <div id="footer">
-                    Copyright 2016 Cultivating Coders media
+                <div class="col-md-3 text-center">
+                    <img class="circleimage" src="lib/imagesfast/wendylogo.png">
+                    <h2>Wendy's Old Fashion Hamburgers</h2>
+                    <p>1820 E. Main   Frmt</p>
                 </div>
 
         </div><!--row-->
 
-    <br><br>
+        <br>
 
         <div class="row">
-            <div class="col-md-3 text-center">
-                <img class="circleimage" src="lib/imagesfast/wendylogo.png">
-                <h2>Wendy's Old Fashion Hamburgers</h2>
-                <p>1820 E. Main   Frmt</p>
-            </div>
-
             <div class="col-md-3 text-center">
                 <img class="circleimage" src="lib/imagesfast/wendylogo.png">
                 <h2>Wendy's Old Fashion Hamburgers</h2>
@@ -540,19 +533,19 @@ t
 
         </div><!--row-->
 
-            <div id="footer">
-                Copyright 2016 Cultivating Coders media
+        <div id="footer">
+            Copyright 2016 Cultivating Coders media
+        </div>
+
+    <br>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+                    Casual Food       <span class="glyphicon glyphicon-glass" aria-hidden="true"></span></h1>
             </div>
+        </div>
 
-    <br><br>
-
-            <div class="container">
-                <div class="jumbotron">
-                    <h1>Casual Food</h1>
-                </div>
-            </div>
-
-            <br><br>
+            <br>
 
             <div class="row">
                     <div class="col-md-3 text-center">
@@ -639,7 +632,11 @@ t
 
                 </div><!--row-->
 
-                <br>
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
+            <br>
 
                 <div class="row">
                     <div class="col-md-3 text-center">
@@ -696,10 +693,6 @@ t
                         <p>560 Scott Ave.   Farmington,N.M.</p>
                     </div>
 
-                <div id="footer">
-                    Copyright 2016 Cultivating Coders media
-                </div>
-
                 </div><!--row-->
 
                 <br>
@@ -731,7 +724,11 @@ t
 
             </div><!--row-->
 
-            <br>
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
+        <br>
 
                 <div class="row">
                     <div class="col-md-3 text-center">
@@ -757,10 +754,6 @@ t
                         <h2>El Pescadoor Restaurant</h2>
                         <p>1794 Hwy 173   Navajo Dam, N.M.</p>
                     </div>
-
-            <div id="footer">
-                Copyright 2016 Cultivating Coders media
-            </div>
 
                 </div><!--row-->
 
@@ -972,10 +965,6 @@ t
                         <p>300 N. 1st st.   Bloomfield,N.M.</p>
                     </div>
 
-                    <div id="footer">
-                        Copyright 2016 Cultivating Coders media
-                    </div>
-
             </div><!--row-->
 
             <br>
@@ -1007,6 +996,10 @@ t
 
                 </div><!--row-->
 
+                <div id="footer">
+                    Copyright 2016 Cultivating Coders media
+                </div>
+
                 <br>
 
                 <div class="row">
@@ -1032,10 +1025,6 @@ t
                         <img class="circleimage" src="lib/imagescasual/ramone.jpg">
                         <h2>Ramone Authentic Grill</h2>
                         <p>200 N. 1st St.  Bloomfield, N.M.</p>
-                    </div>
-
-                    <div id="footer">
-                        Copyright 2016 Cultivating Coders media
                     </div>
 
             </div><!--row-->
@@ -1078,11 +1067,6 @@ t
                         <p>116 S. Main Ave.   Aztec, N.M.</p>
                     </div>
 
-                </div><!--row-->
-
-                <br><br><br>
-
-                <div class="row">
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/rubys.jpg">
                         <h2>Rubys</h2>
@@ -1101,12 +1085,6 @@ t
                         <p>6500 Mickey Plaza   Farmington, N.M.</p>
                     </div>
 
-                    <div class="col-md-3 text-center">
-                        <img class="circleimage" src="lib/imagescasual/serioustexas.jpg">
-                        <h2>Serious Texas Barbeque</h2>
-                        <p>3475 E. Main   Farmington, N.M.</p>
-                    </div>
-
                     <div id="footer">
                         Copyright 2016 Cultivating Coders media
                     </div>
@@ -1116,6 +1094,12 @@ t
             <br>
 
                 <div class="row">
+                    <div class="col-md-3 text-center">
+                        <img class="circleimage" src="lib/imagescasual/serioustexas.jpg">
+                        <h2>Serious Texas Barbeque</h2>
+                        <p>3475 E. Main   Farmington, N.M.</p>
+                    </div>
+
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/serioustexasb.jpg">
                         <h2>Serious Texas Barbeque</h2>
@@ -1134,17 +1118,17 @@ t
                         <p>2001 Bloomfield Hwy.   Farmington, N.M.</p>
                     </div>
 
-                    <div class="col-md-3 text-center">
+            </div><!--row-->
+
+            <br>
+
+                    <div class="row">
+                        div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/sonyas.jpg">
                         <h2>Sonya's Cookin USA Restaurant</h2>
                         <p>510 S. Bloomfield   Bloomfield,N.M.</p>
                     </div>
 
-            </div><!--row-->
-
-            <br>
-
-                <div class="row">
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/sparerib.png">
                         <h2>Sparerib BBQ Co.</h2>
@@ -1163,18 +1147,17 @@ t
                         <p>119 N. Main Ave.   Aztec,N.M.</p>
                     </div>
 
+            </div><!--row-->
+
+            <br>
+
+                <div class="row">
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/sweatpea.jpg">
                         <h2>Sweatpea Cafe</h2>
                         <p>101 N. Main   Aztec, N.M.</p>
                     </div>
 
-
-            </div><!--row-->
-
-            <br>
-
-                <div class="row">
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/tjs.jpg">
                         <h2>TJ's Diner</h2>
@@ -1193,17 +1176,21 @@ t
                         <p>104 S. Main Ave.   Aztec, N.M.</p>
                     </div>
 
+            </div><!--row-->
+
+            <div id="footer">
+                Copyright 2016 Cultivating Coders media
+            </div>
+
+            <br>
+
+                <div class="row">
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/threerivers.jpg">
                         <h2>Three Rivers Eatery & Brewhouse</h2>
                         <p>101 E. Main   Farmington, N.M.</p>
                     </div>
 
-            </div><!--row-->
-
-            <br>
-
-                <div class="row">
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/trattoria.jpg">
                         <h2>Trattoria Di Bernardone</h2>
@@ -1222,32 +1209,23 @@ t
                         <p>   Farmiongton, N.M.</p>
                     </div>
 
+                </div><!--row-->
+
+                <br>
+
+                <div class="row">
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/wonderful.jpg">
                         <h2>Wonderful Buffet</h2>
                         <p>525 E. Broadway   Farmington,N.M.</p>
                     </div>
 
-                </div><!--row-->
-
-                <br>
-
-                <div class="row">
                     div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/wonderfulhouse.jpg">
                         <h2>Wonderful House Chinese Restaurant</h2>
                         <p>115 W. Aztec   Aztec, N.M.</p>
                     </div>
 
-                    <div id="footer">
-                        Copyright 2016 Cultivating Coders media
-                    </div>
-
-            </div><!--row-->
-
-            <br>
-
-                <div class="row">
                     <div class="col-md-3 text-center">
                         <img class="circleimage" src="lib/imagescasual/zebadiahs.jpg">
                         <h2>Zebadiah's Restaurant</h2>
@@ -1260,19 +1238,22 @@ t
                         <p>1300 W. Navajo St.   Farmington,N.M.</p>
                     </div>
 
-
                 </div><!--row-->
 
-                <br>
-
-
-                <div class="container">
-                    <div class="jumbotron">
-                        <h1>Fine Food</h1>
-                    </div>
+                <div id="footer">
+                    Copyright 2016 Cultivating Coders media
                 </div>
 
                 <br>
+
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="text-center"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+                        Fine Dining        <span class="glyphicon glyphicon-glass" aria-hidden="true"></span></h1>
+                </div>
+            </div>
+
+            <br>
 
                 <div class="row">
                     <div class="col-md-3 text-center">
@@ -1299,9 +1280,9 @@ t
                         <p>4601 E. Main   Farmington, N.M.</p>
                     </div>
 
-                </div><!--row-->
+            </div><!--row-->
 
-                <br>
+            <br>
 
                 <div class="row">
                     <div class="col-md-3 text-center">
@@ -1311,6 +1292,10 @@ t
                     </div>
 
                 </div><!--row-->
+
+                <div id="footer">
+                    Copyright 2016 Cultivating Coders media
+                </div>
 
         </div><!--container-->
 
